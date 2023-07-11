@@ -1,0 +1,35 @@
+header{
+    background-color: blue;
+    width: auto; height: 100px;
+    margin: 1%;
+}
+nav{
+    background-color: pink;
+    width: auto; height: 40px;
+    margin: 1%;
+}
+aside{
+    background-color: yellow;
+
+}
+main{
+    width: auto; height: auto;
+    padding: 10px;
+    background-color: aqua;
+}
+article{
+    background-color: red;
+    width: auto; 
+    padding: 20px;
+    margin: 2px;
+    
+}
+figure{
+    background-color: violet;
+}
+p{
+    background-color: green;
+}
+footer{
+    background-color: orange;
+}

@@ -1,0 +1,54 @@
+body{
+    display: flex;
+    flex-wrap: wrap;
+}
+div{
+    width: 4em; /* Ancho de la caja */
+      height: 4em; /* Altura de la caja */
+      border: 1px solid black; /* Borde de 1 píxel sólido en color negro */
+      padding: 10px; /* Espacio interno entre el contenido y el borde */
+      box-sizing: border-box;
+      display: flex;
+      justify-content: center; /*Va al medio de horizontal*/
+      align-items: center; /*Va al medio de vertical*/
+      border-radius: 0.5em;
+}
+.copiar{
+    cursor: text;
+}
+.crosshair{
+    cursor: crosshair;
+}
+.pointer{
+    cursor: pointer;
+}
+.grabbing{
+    cursor: grabbing;
+}
+.help{
+    cursor: help;
+}
+.move{
+    cursor: move;
+}
+.progress{
+    cursor: progress;
+}
+.not-allowed{
+    cursor: not-allowed;
+}
+.none{
+    cursor: none;
+}
+.text{
+    cursor: text;
+}
+.s-reize{
+    cursor: s-resize;
+}
+.sw-resize{
+    cursor: sw-resize;
+}
+.col-resize{
+    cursor:col-resize;
+}

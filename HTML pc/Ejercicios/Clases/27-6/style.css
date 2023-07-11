@@ -1,0 +1,42 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --primary-color: blue;
+    --secondary-color: green;
+    --otro-color: black;
+    --header-size: 4rem;
+    --font:1.8rem;
+}
+html{
+    font-size:62.5%;
+}
+header{
+    width: 100vw;
+    height: 15vh;
+    background-color: var(--primary-color);
+}
+main{
+    width: 100vw;
+    height: 70vh;
+    background-color: aquamarine;
+    font-size: 1rem;
+}
+h1{
+    font-size: 4rem;
+    color: var(--primary-color);
+}
+p{
+    font-size:1.8rem;
+    color:var(--otro-color);
+}
+h6{
+    font-size: 18px;
+}
+footer{
+    width: 100vw;
+    height: 15vh;
+    background-color: burlywood;
+}

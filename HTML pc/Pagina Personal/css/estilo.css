@@ -1,0 +1,46 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+    
+}
+body{
+    font-size: 1.6rem;
+    background-image: linear-gradient(to right, #4b6cb7,#182848);
+}
+header{
+    height: 8rem;
+    background-image: linear-gradient(to left, #4b6cb7,#182848);
+    align-items: end;
+}
+.casa{
+    align-items: end;
+}
+li{
+    width: 10rem;
+    height: 3rem;
+    border: 1px black solid;
+    border-radius: 1rem;
+    list-style: none;
+    text-align: center;
+    align-items: center;
+    background-color: white;   
+}
+.enlaces{
+    margin-left: 30rem;
+    margin-right: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+a{
+    text-decoration: none;
+}
+li:hover{
+    width: 15rem;
+    height: 4.5rem;
+    background-color: red;
+}
