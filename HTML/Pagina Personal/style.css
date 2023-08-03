@@ -5,31 +5,5 @@
 }
 html{
     font-size: 62.5%;
-}
-body{
-    /*background-color: black;*/
-}
-/*.per{
-    display: none;
-}*/
-header{
-    background: linear-gradient(to left,#5fbefdc2 ,#4d99cc00);
-    width: auto;
-}
-.enlaces{
-    justify-content: end;
-    scroll-behavior: smooth;
-    display: flex; 
-    padding: 5px;
-}
-li{
-    border: 1px;
-    margin: 20px;
-    margin-left: 5%;
-    flex-wrap: wrap;
-    list-style: none;
-    font-size: 20px;
-}
-.enlaces a{
-    text-decoration: none;
+    
 }
