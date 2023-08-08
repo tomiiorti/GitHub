@@ -22,7 +22,7 @@
                             La película tiene pensado recaudar 500 millones en su primer fin de semana. 
                             Pero, si tu todavía tienes dudas de si ver 'Avatar: el sentido del agua', 
                             no olvides leer nuestra review.</p>
-                        <a href="https://www.youtube.com/watch?v=jYRtFFa4hT8&ab_channel=SensaCineTRAILERS">Ver Trailer</a> 
+                        <a href="https://www.youtube.com/watch?v=jYRtFFa4hT8&ab_channel=SensaCineTRAILERS" target="_blank" rel="noopener noreferrer">Ver Trailer</a> 
                     </div>
                 </div>    
             </div>
@@ -38,7 +38,7 @@
                             esa es una incógnita que todos los que no la han visto tienen ganas de descubrir. 
                             Nosotros no solo te hemos dicho cómo sería Wakanda Forever con Boseman, 
                             si no que también te hemos anunciado cuándo llegará Black Panther 2 a Disney +.</p>
-                        <a href="https://www.youtube.com/watch?v=RlOB3UALvrQ&ab_channel=MarvelEntertainment">Ver Trailer</a>
+                        <a href="https://www.youtube.com/watch?v=RlOB3UALvrQ&ab_channel=MarvelEntertainment" target="_blank" rel="noopener noreferrer">Ver Trailer</a>
                     </div>
                 </div>
             </div>
@@ -54,7 +54,7 @@
                         <p>Uno de los personajes más carismáticos del universo Pixar tiene su propia película en solitario, 
                             Chris Evans dará voz a la versión ficcional del personaje, el héroe espacial y no el juguete que se deriva del mismo. 
                             ¿En qué orden quedará Lightyear entre las mejores películas de Pixar?</p>
-                        <a href="https://www.youtube.com/watch?v=WikwAJ3NQew&ab_channel=DisneyStudiosLA">Ver Trailer</a>
+                        <a href="https://www.youtube.com/watch?v=WikwAJ3NQew&ab_channel=DisneyStudiosLA" target="_blank" rel="noopener noreferrer">Ver Trailer</a>
                     </div>
                 </div>
             </div>
@@ -70,7 +70,7 @@
                             Chris Evans, Ana de Armas, Regé-Jean Page y Billy Bob Thornton, entre otros. 
                             Eso sí, antes, una semana antes la podremos ver en pantalla grande, 
                             como todo verdadero gran estreno de Netflix.</p>
-                        <a href="https://www.youtube.com/watch?v=Go8nTmfrQd8&ab_channel=MarvelEntertainment">Ver Trailer</a>
+                        <a href="https://www.youtube.com/watch?v=Go8nTmfrQd8&ab_channel=MarvelEntertainment" target="_blank" rel="noopener noreferrer">Ver Trailer</a>
                     </div>
                 </div>
             </div>
@@ -79,29 +79,57 @@
         
         <div class="row mt-5">
             <div class="col card border border-primary bg-primary p-2 text-dark bg-opacity-10" >
-                <h2>Elige tu Película Favorita</h2>
-                <form>
-                    <label>
-                        <input type="radio" name="pelicula" value="pelicula1"> Avatar 2: El sentido del agua
-                    </label>
-                    <br>
-                    <label>
-                        <input type="radio" name="pelicula" value="pelicula2"> Black Panther: Wakanda Forever
-                    </label>
-                    <br>
-                    <label>
-                        <input type="radio" name="pelicula" value="pelicula3"> Lightyear
-                    </label>
-                    <br>
-                    <label>
-                        <input type="radio" name="pelicula" value="pelicula4"> Thor: Love & Thunder
-                    </label>
-                    <br>
-                    <button type="submit" class="btn btn-primary mt-3">Enviar</button>
-                </form>
-            </div>
+                <div class="container mt-5">
+                    <form>
+                        <div class="mb-3">
+                            <label for="pelicula" class="form-label">Película:</label>
+                            <select class="form-select" id="pelicula" name="pelicula">
+                                <option value="avatar">Avatar</option>
+                                <option value="black-panther">Black Panther</option>
+                                <option value="lightyear">Lightyear</option>
+                                <option value="thor">Thor</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="opinion" class="form-label">Opinión:</label><br>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" id="buena" name="opinion" value="buena">
+                                <label class="form-check-label" for="buena">Buena</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" id="regular" name="opinion" value="regular">
+                                <label class="form-check-label" for="regular">Regular</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" id="mala" name="opinion" value="mala">
+                                <label class="form-check-label" for="mala">Mala</label>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="genero" class="form-label">Género:</label><br>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="accion" name="genero[]" value="accion">
+                                <label class="form-check-label" for="accion">Acción</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="aventura" name="genero[]" value="aventura">
+                                <label class="form-check-label" for="aventura">Aventura</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="ciencia-ficcion" name="genero[]" value="ciencia-ficcion">
+                                <label class="form-check-label" for="ciencia-ficcion">Ciencia Ficción</label>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="opinion-adicional" class="form-label">Opinión Adicional:</label>
+                            <textarea class="form-control" id="opinion-adicional" name="opinion-adicional" rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </form>
+                </div>
         </div>
     </div>
+    
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
