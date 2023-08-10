@@ -1,0 +1,7 @@
+.intento{
+    background-image: linear-gradient(to left, rgba(29, 129, 29, 0.486),rgba(178, 202, 112, 0.555));
+}
+.formu{
+    background-image: linear-gradient(to left ,rgba(178, 202, 112, 0.555), rgba(29, 129, 29, 0.486));
+    border-radius: 1rem;
+}
