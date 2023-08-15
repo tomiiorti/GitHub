@@ -22,3 +22,8 @@ img{
 img{
     margin-left: 4rem;
 }
+.rounded-circle{
+    background: #e0e0e0;
+    box-shadow:  10px 10px 20px #a6a6a6,
+    -10px -10px 20px #ffffff;
+}
