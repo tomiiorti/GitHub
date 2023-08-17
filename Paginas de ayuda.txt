@@ -1,0 +1,3 @@
+Floating UI: Mejorar CSS
+Neumorphism.io: Sombreado a los conteiners
+UiGradients: Gradiantes de color
