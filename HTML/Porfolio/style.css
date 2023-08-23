@@ -1,3 +1,42 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    /*font-size: 62.5%;*/
+    
+}
+.body{
+    background-image: linear-gradient(to right, rgba(191, 205, 224), #5b79a39a);
+}
+.navbar{
+    background-color: #2c3a4ec9;
+}
+img{
+    width: 10rem;
+}
+img{
+    margin-left: 4rem;
+}
+.rounded-circle{
+    background: 191, 205, 224;
+    box-shadow:  10px 10px 20px #a6a6a6,
+    -10px -10px 20px #03030328;
+}
+.navbar-nav .nav-link {
+  color: #afcffcc9;
+  font-size: 16px; /* Tamaño de fuente predeterminado */
+  transition: color 0.3s, font-size 0.3s; /* Agregamos transiciones suaves para color y tamaño de fuente */
+}
+
+.navbar-nav .nav-link:hover {
+  color: rgb(255, 255, 255);
+  font-size: 18px; /* Tamaño de fuente más grande al pasar el cursor */
+}
+.tab-content{
+    height: 25rem
+}
 .slider {
     display: flex;
     height: auto;
@@ -56,3 +95,8 @@
         transform: translateX(-100%);
     }
 }
+#opc {
+    overflow-y: auto;
+    max-height: calc(100vh - 10px); /* Ajusta el valor según sea necesario */
+  }
+  
