@@ -3,10 +3,6 @@
     margin: 0;
     padding: 0;
 }
-html{
-    /*font-size: 62.5%;*/
-    
-}
 .body{
     background-image: linear-gradient(to right, rgba(191, 205, 224), #5b79a39a);
 }
@@ -18,11 +14,6 @@ img{
 }
 img{
     margin-left: 4rem;
-}
-.rounded-circle{
-    background: 191, 205, 224;
-    box-shadow:  10px 10px 20px #a6a6a6,
-    -10px -10px 20px #03030328;
 }
 .navbar-nav .nav-link {
   color: #afcffcc9;
@@ -45,48 +36,42 @@ img{
     align-items: center;
     position: relative;
 }
-
 .slider::before {
     position: absolute;
     z-index: 1;
     left: 0;
     content: "";
-    width: 23.958%;
+    width: 15.958%;
     height: 110px;
     background: linear-gradient(-90deg, hsla(0, 0%, 96.9%, 0), #f7f7f7);
 }
-
 .slider::after {
     position: absolute;
     z-index: 1;
     right: 0;
     content: "";
-    width: 23.958%;
+    width: 15.958%;
     height: 110px;
-    background: linear-gradient(90deg, hsla(0, 0%, 96.9%, 0), hsla(0, 0%, 96.9%, 0.99));
+    background: linear-gradient(90deg, hsla(0, 95%, 44%, 0), hsla(0, 0%, 96.9%, 0.99));
 }
-
 .slider .slide-track {
     display: flex;
     width: max-content;
-    animation: scroll 35s linear infinite;
+    animation: scroll 60s linear infinite;
 }
-
+.rad{
+    border-radius: 20px;
+}
 .slider .slide {
     display: flex;
 }
-
 .slider .slide img {
-    width: 180px;
+    width: 100px;
     height: 80px;
     padding: 10px;
-    background-color: white;
     cursor: pointer;
     margin: 20px;
-    border-radius: 8px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
-
 @keyframes scroll {
     0% {
         transform: translateX(0);
@@ -98,5 +83,11 @@ img{
 #opc {
     overflow-y: auto;
     max-height: calc(100vh - 10px); /* Ajusta el valor según sea necesario */
-  }
-  
+}
+/* Estilos personalizados para las secciones con fondo negro */
+.tab-pane .card {
+    background-color: rgba(128, 137, 252, 0.356); /* Cambia esto al color deseado */
+    color: white; /* Cambia esto al color del texto deseado */
+    border: none; /* Elimina el borde */
+    box-shadow: none; /* Elimina la sombra si no la deseas */
+}
