@@ -9,11 +9,11 @@
 .navbar{
     background-color: #00060f;
 }
+
 img{
-    width: 10rem;
-}
-img{
-    margin-left: 4rem;
+    justify-content: center;
+    align-items: center;
+    margin-left: 8rem;
 }
 .navbar-nav .nav-link {
   color: #afcffcc9;
@@ -98,4 +98,8 @@ img{
     background: 191, 205, 224;
     box-shadow:  5px 5px 10px #0305229c,
     -10px -10px 20px #03030328;
+    
+}
+.container .card{
+    height: 20rem;
 }
