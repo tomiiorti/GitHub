@@ -8,10 +8,10 @@ html{
     
 }
 .body{
-    background-image: linear-gradient(to right, rgba(191, 205, 224), rgba(142, 149, 177));
+    background-image: linear-gradient(to right, rgba(191, 205, 224), #5b79a39a);
 }
 .navbar{
-    background-color: rgba(0, 0, 0, 0.671);
+    background-color: #2c3a4ec9;
 }
 img{
     width: 10rem;
@@ -27,9 +27,12 @@ img{
     box-shadow:  10px 10px 20px #a6a6a6,
     -10px -10px 20px #03030328;
 }
-.secc{
-    background-color: rgba(240, 0, 120, 0.829);
+.navbar-nav .nav-link {
+  color: #afcffcc9;
+  font-size: 16px; /* Tamaño de fuente predeterminado */
+  transition: color 0.3s, font-size 0.3s; /* Agregamos transiciones suaves para color y tamaño de fuente */
 }
+<<<<<<< HEAD:HTML/PaginaPersonal/style.css
 .navbar-nav .nav-link {
     color: white;
     transition: color 0.3s; /* Agregamos una transición suave para el cambio de color */
@@ -38,4 +41,10 @@ img{
 .navbar-nav .nav-link:hover {
     font-size: 110%;
     color: rgba(192, 203, 252, 0.582); /* Cambiamos el color al pasar el cursor sobre el enlace */
+=======
+
+.navbar-nav .nav-link:hover {
+  color: rgb(255, 255, 255);
+  font-size: 18px; /* Tamaño de fuente más grande al pasar el cursor */
+>>>>>>> 6a448f72e30a4da14cc6b73d513a4155d36f515e:HTML/CV/style.css
 }

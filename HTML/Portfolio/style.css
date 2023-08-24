@@ -1,0 +1,108 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.body{
+    background-image: linear-gradient(to right, rgb(26, 37, 48), #132641);
+}
+.navbar{
+    background-color: #00060f;
+}
+
+img{
+    justify-content: center;
+    align-items: center;
+    margin-left: 8rem;
+}
+.navbar-nav .nav-link {
+  color: #afcffcc9;
+  font-size: 14px; /* Tamaño de fuente predeterminado */
+  transition: color 0.3s, font-size 0.3s; /* Agregamos transiciones suaves para color y tamaño de fuente */
+}
+
+.navbar-nav .nav-link:hover {
+  color: rgb(255, 255, 255);
+  font-size: 18px; /* Tamaño de fuente más grande al pasar el cursor */
+}
+.tab-content{
+    height: 25rem
+}
+.slider {
+    display: flex;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+    align-items: center;
+    position: relative;
+}
+.slider::before {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    content: "";
+    width: 15.958%;
+    height: 110px;
+    background: linear-gradient(-90deg, hsla(0, 0%, 97%, 0),hsla(0, 0%, 97%, 0.300));
+}
+.slider::after {
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    content: "";
+    width: 15.958%;
+    height: 110px;
+    background: linear-gradient(90deg, hsla(0, 0%, 97%, 0), hsla(0, 0%, 97%, 0.300));
+}
+.slider .slide-track {
+    display: flex;
+    width: max-content;
+    animation: scroll 60s linear infinite;
+}
+.rad{
+    border-radius: 20px;
+}
+.slider .slide {
+    display: flex;
+}
+.slider .slide img {
+    width: 100px;
+    height: 80px;
+    padding: 10px;
+    cursor: pointer;
+    margin: 20px;
+}
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+#opc {
+    overflow-y: auto;
+    max-height: calc(100vh - 10px); /* Ajusta el valor según sea necesario */
+}
+/* Estilos personalizados para las secciones con fondo negro */
+.tab-pane .card {
+    background-color: rgba(0, 0, 0, 0.377); /* Cambia esto al color deseado */
+    color: white; /* Cambia esto al color del texto deseado */
+    border: none; /* Elimina el borde */
+    box-shadow: none; /* Elimina la sombra si no la deseas */
+    min-width: 10rem;
+}
+.to{
+    height: 40rem;
+}
+.rounded-circle{
+    background: 191, 205, 224;
+    box-shadow:  5px 5px 10px #0305229c,
+    -10px -10px 20px #03030328;
+    
+}
+.a .card{
+    height: 20rem;
+    background-color: pink;
+    color: white;
+}
