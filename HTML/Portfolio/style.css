@@ -57,7 +57,7 @@ img{
 .slider .slide-track {
     display: flex;
     width: max-content;
-    animation: scroll 60s linear infinite;
+    animation: scroll 180s linear infinite;
 }
 .rad{
     border-radius: 20px;
