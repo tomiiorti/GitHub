@@ -31,7 +31,7 @@
               <a class="nav-link " aria-current="page" href="#habi">Habilidades</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link " aria-current="page" href="#conoc">Conocimientos</a>
+              <a class="nav-link " aria-current="page" href="#cono">Conocimientos</a>
             </li>
           </ul>
         </div>
@@ -42,8 +42,13 @@
     <section>
       <div id="carouselExample" class="carousel slide">
         <div class="carousel-inner">
-          <div class="carousel-item active d-flex justify-content-center">
-            <img src="./img/azure.png" class="d-block" style="width:10rem;" alt="...">
+          <div class="carousel-item  active d-flex justify-content-center">
+            <div class="card m-5 col-md-4 "> 
+                <a class="card-title fs-3 nav-link"><strong>Sobre mí</strong></a>
+                <p class="card-text">Tengo como objetivo el crecimiento constante de aprendizaje en el ámbito laboral, 
+                    un deseo de adquirir permanentemente herramientas que se me otorgue en la empresa para poder crecer 
+                    yo mismo y así poder ayudar a la empresa.</p>
+            </div>
           </div>
           <div class="carousel-item">
             <img src="./img/css3.png" class="d-block w-100" alt="...">
@@ -64,16 +69,16 @@
     </section>
     <section class="d-flex flex-column flex-md-row">
             <div class="col-md-4 order-first">
-                <div class="img">
-                    <img src="./img/Imagen_de_WhatsApp_2023-07-17_a_las_19.39.15.jpg" alt="Tomas" style="width: 60%" class="rounded-circle mt-5">
+                <div class="img-container">
+                    <img src="./img/Imagen_de_WhatsApp_2023-07-17_a_las_19.39.15.jpg" alt="Tomas" style="width: 60%" class="rounded-circle mt-5 img-fluid">
                 </div>
             </div>
             <div class="to col-md-6">
               <div>
-                  <div id="myname">
+                  <div id="mi">
                       <p>Tomas Orti</p>
                   </div>
-                  <div id="opc" class="">
+                  <div class="">
                       <ul class="nav nav-tabs" id="myTab" role="tablist">
                         <li class="nav-item" role="presentation">
                           <a class="nav-link active" id="me-tab" data-bs-toggle="tab" href="#me" role="tab" aria-controls="me" aria-selected="true">Sobre mi</a>
@@ -84,10 +89,13 @@
                         <li class="nav-item" role="presentation">
                           <a class="nav-link" id="expe-tab" data-bs-toggle="tab" href="#expe" role="tab" aria-controls="expe" aria-selected="false">Experiencia laboral</a>
                         </li>
+                        <li class="nav-item" role="presentation">
+                          <a class="nav-link" id="expe-tab" data-bs-toggle="tab" href="#edpe" role="tab" aria-controls="edpe" aria-selected="false">Estudios personales</a>
+                        </li>
                       </ul>
                   </div>
               </div>
-              <div class="tab-content col-md-10" id="myTabContent">
+              <div class="tab-content " id="myTabContent">
                   <div class="tab-pane fade show active" id="me" role="tabpanel" aria-labelledby="me-tab">
                       <div class="card mt-3 ">
                           <div class="card-body">
@@ -136,14 +144,23 @@
                           </div>
                       </div>
                   </div>
+                  <div class="tab-pane fade" id="edpe" role="tabpanel" aria-labelledby="edpe-tab">
+                    <div class="card mt-3 ">
+                        <div class="container card">
+                            <a id="edpe" class="fs-3 nav-link">asdasd</a>
+                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 </div>
           </div>
     </section>
     <section>
       <div class="container">
         <div class="row mt-5">
-            <div class="col-md-4">
-                <div class="p-3 card bg-primary p-2 text-dark bg-opacity-10 " style="max-height: 20rem; overflow-y: auto;">
+            <div class="col-md-4 p-3">
+                <div class="p-3 card bg-primary p-2 text-dark bg-opacity-10" style="max-height: 20rem; overflow-y: auto;">
                     <h2>Proyecto 1</h2>
                     <img src="./img/avatar.jpeg" alt="Proyecto 1" class="img-fluid">
                     <a class="nav-link border rounded-pill p-2" href="#" data-bs-toggle="collapse" data-bs-target="#descripcionAvatar" aria-expanded="false" aria-controls="descripcionAvatar">Ver Descripción</a>
@@ -153,7 +170,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 p-3">
                 <div class="p-3 card bg-primary p-2 text-dark bg-opacity-10" style="max-height: 20rem; overflow-y: auto;">
                     <h2>Proyecto 2</h2>
                     <img src="./img/blackpanter.jpeg" alt="Proyecto 2" class="img-fluid">
@@ -164,7 +181,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 p-3">
                 <div class="p-3 card bg-primary p-2 text-dark bg-opacity-10" style="max-height: 20rem; overflow-y: auto;">
                     <h2>Proyecto 3</h2>
                     <img src="./img/blackpanter.jpeg" alt="Proyecto 3" class="img-fluid">
@@ -180,7 +197,7 @@
     
     </section>
     <section>
-          <div class="slider mt-3">
+          <div class="slider mt-3" id="cono">
               <div class="slide-track">
                   <div class="slide"><img src="./img/java.png"alt="Java" class="rad"></div>
                   <div class="slide"><img src="./img/python.png"alt="Python" class="rad"></div>
@@ -219,7 +236,29 @@
     </section>
 
   </main>
-
+  <footer class="mt-5 py-4  text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <a href="https://github.com/tomiiorti" target="_blank" class="me-4 github" rel="nofollow">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+                <a href="https://www.linkedin.com/in/tomasorti" target="_blank" class="me-4 linkedin" rel="nofollow">
+                    <i class="fab fa-linkedin"></i> Linkedin
+                </a>
+                <a href="https://www.instagram.com/tomiiorti" target="_blank" class="me-4 instagram" rel="nofollow">
+                    <i class="fab fa-instagram"></i> Instagram
+                </a>
+                <a href="mailto:tomas.orti99@gmail.com" class="me-4 gmail">
+                    <i class="fas fa-envelope"></i> Gmail
+                </a>
+                <a href="https://wa.me/+5401134191647" target="_blank" class="whatsapp" rel="nofollow">
+                    <i class="fab fa-whatsapp"></i> Mi Whatsapp
+                </a>
+            </div>
+        </div>
+    </div>
+  </footer>
 
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>

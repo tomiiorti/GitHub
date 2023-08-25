@@ -7,14 +7,20 @@
     background-image: linear-gradient(to right, rgb(26, 37, 48), #132641);
 }
 .navbar{
-    background-color: #00060f;
+    background-color: #1d1d1d3b;
 }
 
-img{
+.img-container {
+    display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 8rem;
-}
+     /* Asegura que el div tenga una altura para centrar la imagen */
+  }
+  
+  .img-container img {
+    max-width: 100%; /* Asegura que la imagen no se agrande más allá de su tamaño original */
+    max-height: 100%; /* Asegura que la imagen no se agrande más allá de su tamaño original */
+  }
 .navbar-nav .nav-link {
   color: #afcffcc9;
   font-size: 14px; /* Tamaño de fuente predeterminado */
@@ -62,6 +68,9 @@ img{
 .rad{
     border-radius: 20px;
 }
+.container .card{
+    border-radius: 1rem;
+}
 .slider .slide {
     display: flex;
 }
@@ -82,7 +91,7 @@ img{
 }
 #opc {
     overflow-y: auto;
-    max-height: calc(100vh - 10px); /* Ajusta el valor según sea necesario */
+    max-height: calc(100vh - 5px); /* Ajusta el valor según sea necesario */
 }
 /* Estilos personalizados para las secciones con fondo negro */
 .tab-pane .card {
@@ -102,4 +111,29 @@ img{
 }
 .container .card{
     height: 20rem;
+}
+footer a {
+    color: #ffffff; /* Cambia este valor al color deseado */
+    text-decoration: none; /* Elimina la subrayado en los enlaces */
+    transition: color 0.3s; /* Agrega una transición suave al cambiar el color */
+}
+  
+  /* Cambia el color de los enlaces al pasar el cursor */
+footer .github:hover {
+    color: #176100; /* Cambia este valor al color deseado al pasar el cursor */
+}
+footer .linkedin:hover {
+    color: #719efdbd; /* Cambia este valor al color deseado al pasar el cursor */
+}
+footer .instagram:hover {
+    background-image: linear-gradient(to right, rgb(255, 0, 179),yellow);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+footer .gmail:hover {
+    color: rgba(255, 68, 68, 0.658);
+}
+footer .whatsapp:hover {
+    color: #09ff00a1; /* Cambia este valor al color deseado al pasar el cursor */
 }
