@@ -99,6 +99,7 @@
     color: white; /* Cambia esto al color del texto deseado */
     border: none; /* Elimina el borde */
     box-shadow: none; /* Elimina la sombra si no la deseas */
+    min-width: 10rem;
 }
 .to{
     height: 40rem;
@@ -109,8 +110,9 @@
     -10px -10px 20px #03030328;
     
 }
-.container .card{
+.a .card{
     height: 20rem;
+<<<<<<< HEAD
 }
 footer a {
     color: #ffffff; /* Cambia este valor al color deseado */
@@ -137,3 +139,8 @@ footer .gmail:hover {
 footer .whatsapp:hover {
     color: #09ff00a1; /* Cambia este valor al color deseado al pasar el cursor */
 }
+=======
+    background-color: pink;
+    color: white;
+}
+>>>>>>> c81666cf00a1a6f46fc782f6eecd369d0734c1fa
