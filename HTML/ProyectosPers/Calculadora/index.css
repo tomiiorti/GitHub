@@ -1,0 +1,28 @@
+.calculadora{
+    display: block;
+    width: 20rem;
+    padding: 1rem;
+    margin: 1rem;
+    background-image: linear-gradient(to right, rgba(119, 119, 119, 0.692), rgb(129, 129, 129));
+    border-radius: 1rem;
+}
+.calculadora button{
+    display: inline-block;
+    display: block;
+    background-color:#0275d8 ;
+    height: 3rem;
+    border-radius: 0.4rem;
+}
+#resultado{
+    background-color: rgb(0, 87, 65) !important;
+    color: white;
+    display: block;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    height: 5rem;
+    overflow-y: auto;
+    border-radius: 1rem;
+}
