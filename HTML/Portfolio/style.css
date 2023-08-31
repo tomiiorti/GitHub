@@ -140,3 +140,21 @@ footer .whatsapp:hover {
 label{
     color: white;
 }
+#back{
+    width: 3rem;
+    height: 3rem;
+    text-decoration: none;
+    color: #2c3a4ec9;
+    font-size: 3rem;
+    border-radius: 100%;
+    position: fixed;
+    bottom: 1rem; /* Puedes ajustar la posición vertical según tus necesidades */
+    left:0.8rem;
+    text-align: center;
+    transition: color 1s ease;
+    margin-bottom: 1rem;
+}
+
+  #back:hover{
+    color: rgb(0, 26, 255);
+} 
