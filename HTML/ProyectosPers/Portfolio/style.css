@@ -107,12 +107,10 @@
 .rounded-circle{
     background: 191, 205, 224;
     box-shadow:  5px 5px 10px #0305229c,
-    -10px -10px 20px #03030328;
-    
+    -10px -10px 20px #03030328;   
 }
 .a .card{
     height: 20rem;
-<<<<<<< HEAD
 }
 footer a {
     color: #ffffff; /* Cambia este valor al color deseado */
@@ -139,8 +137,6 @@ footer .gmail:hover {
 footer .whatsapp:hover {
     color: #09ff00a1; /* Cambia este valor al color deseado al pasar el cursor */
 }
-=======
-    background-color: pink;
+label{
     color: white;
 }
->>>>>>> c81666cf00a1a6f46fc782f6eecd369d0734c1fa
