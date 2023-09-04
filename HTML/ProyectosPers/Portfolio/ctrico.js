@@ -1,4 +1,4 @@
-window.requestAnimFrame = function (){
+/*window.requestAnimFrame = function (){
     return(
         window.requestAnimationFrame ||
         window.webkitRequestAnimationFrame ||
@@ -25,4 +25,20 @@ window.onloead = function(){
     canvas = init("canvas").canvas,
     w = (canvas.width = window.innerWidth),
     h = (canvas.height = window.innerHeight)
-}
+}*/
+var swiper = new Swiper (".mySwiper",  {
+    slidesPerView: 1,
+    centeredSlides:true,
+    loop:true,
+    spaceBetween: 30,
+    grabCursor:true,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+    },
+    breakpoints :{
+        991: {
+            slidesPerView: 3
+        }
+    }
+});
