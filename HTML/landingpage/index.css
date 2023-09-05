@@ -1,8 +1,12 @@
 body{
+    height: 100%;
     margin: 0;
     padding: 0;
     font-family: "Poppins";
     background-image: linear-gradient(to bottom, #bdc3c7, #2c3e50);
+}
+header, main {
+  height: 100%;
 }
 header{
     width: auto;
