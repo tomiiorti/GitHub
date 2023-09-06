@@ -14,6 +14,13 @@ main{
 .cont {
   height: 87vh;
 }
+.container-min-height {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 5%; /* Añade espacio entre el contenido y el footer */
+}
 header{
     width: auto;
     height: 5%;
