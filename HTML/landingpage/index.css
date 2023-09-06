@@ -1,17 +1,22 @@
 body{
   box-sizing: border-box;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    font-family: "Poppins";
-    background-image: linear-gradient(to bottom, #bdc3c7, #2c3e50);
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins";
+  background-image: linear-gradient(to bottom, #bdc3c7, #2c3e50);
 }
-header, main {
-  height: 100%;
+body{
+  height: 100vh;
+}
+main{
+  height: auto;
+}
+.cont {
+  height: 87vh;
 }
 header{
     width: auto;
-    height: 3rem ;
+    height: 5%;
     position: relative;
     background: linear-gradient(90deg, rgba(0, 0, 0, 0.2), rgba(0,0,0,0), rgba(0, 0, 0, 0.2));
     color: white; /* Texto en color blanco */
@@ -100,7 +105,7 @@ footer .whatsapp:hover {
     color: #09ff00a1; /* Cambia este valor al color deseado al pasar el cursor */
 }
 footer{
+  height: 5%;
   background-color: #31455a36;
-  height: 5rem;
   justify-content: center;
 }
