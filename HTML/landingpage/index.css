@@ -1,32 +1,22 @@
 body{
-  box-sizing: border-box;
+  height: 100vh;
   margin: 0;
   padding: 0;
   font-family: "Poppins";
   background-image: linear-gradient(to bottom, #bdc3c7, #2c3e50);
 }
-body{
-  height: 100vh;
-}
-main{
+.container-fluid{
   height: auto;
 }
 .cont {
-  height: 87vh;
-}
-.container-min-height {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin-bottom: 5%; /* Añade espacio entre el contenido y el footer */
+  width: auto;
+  height: 88vh;
 }
 header{
-    width: auto;
-    height: 5%;
-    position: relative;
-    background: linear-gradient(90deg, rgba(0, 0, 0, 0.2), rgba(0,0,0,0), rgba(0, 0, 0, 0.2));
-    color: white; /* Texto en color blanco */
+  height: 7vh;
+  width: auto;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.2), rgba(0,0,0,0), rgba(0, 0, 0, 0.2));
+  color: white; /* Texto en color blanco */
 }
 
 .form {
@@ -112,7 +102,7 @@ footer .whatsapp:hover {
     color: #09ff00a1; /* Cambia este valor al color deseado al pasar el cursor */
 }
 footer{
-  height: 5%;
+  height: 5vh;
   background-color: #31455a36;
   justify-content: center;
 }

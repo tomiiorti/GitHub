@@ -1,0 +1,51 @@
+.body{
+  height: 100vh;
+  width: auto;
+  background-color: red;
+}
+.cabeza{
+  height:10%;
+  background:#28a745 ;
+}
+main{
+  height: auto;
+
+}
+.col-md-8{
+  background-color: green;
+}
+.col-md-3{
+  background-color: pink;
+}
+footer a {
+  min-height: 2rem;
+  font-family: "Poppins", sans-serif;
+  color: rgb(255, 254, 254);
+  text-decoration: none; /* Elimina la subrayado en los enlaces */
+  transition: color 0.3s; /* Agrega una transición suave al cambiar el color */
+}
+
+/* Cambia el color de los enlaces al pasar el cursor */
+footer .github:hover {
+  color: #176100; /* Cambia este valor al color deseado al pasar el cursor */
+}
+footer .linkedin:hover {
+  color: #719efdbd; /* Cambia este valor al color deseado al pasar el cursor */
+}
+footer .instagram:hover {
+  background-image: linear-gradient(to right, rgb(255, 0, 179),yellow);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+footer .gmail:hover {
+  color: rgba(255, 68, 68, 0.658);
+}
+footer .whatsapp:hover {
+  color: #09ff00a1; /* Cambia este valor al color deseado al pasar el cursor */
+}
+footer{
+  height: 10%;
+  background-color: black;
+  justify-content: center;
+}
