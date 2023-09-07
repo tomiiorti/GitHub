@@ -8,7 +8,7 @@
   background:#28a745 ;
 }
 main{
-  height: auto;
+  height: 90vh;
   min-height: 300px;
 }
 .col-md-8{
