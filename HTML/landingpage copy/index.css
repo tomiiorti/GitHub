@@ -7,15 +7,11 @@
   height:10vh;
   background:#28a745 ;
 }
-main{
-  height: 90vh;
-  min-height: 300px;
-}
-.col-md-8{
+.col-md-6{
   background-color: green;
   height: auto;
 }
-.col-md-3{
+.col-md-4{
   background-color: pink;
 }
 footer a {
