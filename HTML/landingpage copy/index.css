@@ -1,18 +1,18 @@
 .body{
-  height: 100vh;
+  height: auto;
   width: auto;
   background-color: red;
 }
 .cabeza{
-  height:10%;
+  height:10vh;
   background:#28a745 ;
 }
 main{
   height: auto;
-
 }
 .col-md-8{
   background-color: green;
+  height: auto;
 }
 .col-md-3{
   background-color: pink;
@@ -45,7 +45,7 @@ footer .whatsapp:hover {
   color: #09ff00a1; /* Cambia este valor al color deseado al pasar el cursor */
 }
 footer{
-  height: 10%;
+  height: 10vh;
   background-color: black;
   justify-content: center;
 }
