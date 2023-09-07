@@ -9,6 +9,7 @@
 }
 main{
   height: auto;
+  min-height: 300px;
 }
 .col-md-8{
   background-color: green;
