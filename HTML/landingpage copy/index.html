@@ -9,119 +9,123 @@
     <title>Document</title>
 </head>
 <body class="body">
-    <header class="cabeza d-flex justify-content-center align-items-center">
-        <a class="" href="#">Gimnasio</a>
-    </header>
+
     <!--DIVision-->
     <main>
-        <div class="main d-flex justify-content-center flex-wrap">
-            <section class="m-5 col-md-6 d-flex justify-content-center align-items-center">
-                <div class="login d-flex justify-content-center " style="height: 23rem;">
-                    <div class="form row m-5 btn btn-secondary">
-                        <p class="mb-">A entrenar</p>
-                        <div class="my-4">
-                            <label for="username" class="form-label visually-hidden">Usuario</label>
-                            <div class="input-group">
-                                <span class="input-group-text" id="basic-addon1"><i class="fas fa-user"></i></span>
-                                <input type="text" class="form-control" id="username" placeholder="Usuario" required>
+        <div class="main">
+            <header class="cabeza d-flex justify-content-center align-items-center">
+                <a class="" href="#">Gimnasio</a>
+            </header>
+            <div class="d-flex justify-content-center flex-wrap">
+                <section class="col-md-6 d-flex justify-content-center align-items-center">
+                    <div class=" login d-flex justify-content-center " style="height: auto;">
+                        <div class="form row m-5 btn btn-secondary" style="flex-direction: column; align-items: center;">
+                            <p>A entrenar</p>
+                            <div class="my-4">
+                                <label for="username" class="form-label visually-hidden">Usuario</label>
+                                <div class="input-group">
+                                    <span class="input-group-text" id="basic-addon1"><i class="fas fa-user"></i></span>
+                                    <input type="text" class="form-control" id="username" placeholder="Usuario" required>
+                                </div>
                             </div>
-                        </div>
-                        <div class="mb-5">
-                            <label for="password" class="form-label visually-hidden">Contraseña</label>
-                            <div class="input-group">
-                                <span class="input-group-text" id="basic-addon2"><i class="fas fa-lock"></i></span>
-                                <input type="password" class="form-control" id="password" placeholder="Contraseña" required>
+                            <div class="mb-5">
+                                <label for="password" class="form-label visually-hidden">Contraseña</label>
+                                <div class="input-group">
+                                    <span class="input-group-text" id="basic-addon2"><i class="fas fa-lock"></i></span>
+                                    <input type="password" class="form-control" id="password" placeholder="Contraseña" required>
+                                </div>
                             </div>
-                        </div>
-                        <div class="mt-auto">
-                        <button type="submit" name="send2" class="btn btn-primary w-100">Ingresar</button>
+                            <div class="mt-auto">
+                            <button type="submit" name="send2" class="btn btn-primary w-100">Ingresar</button>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </section>
-            <!--DIVision-->
-            <aside class="col-md-4 d-flex align-items-center">
-                <div class="my-5">
-                    <div class="row">
-                        <div id="productCarousel2" class="carousel slide my-3" data-bs-ride="carousel">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <div class="col-md-8 mx-auto p-3">
-                                        <div class="card product-card">
-                                            <img src="./img/img_1616522671_crop-PhotoRoom.png-PhotoRoom.png" class="card-img-top" alt="Imagen del producto 1">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Nombre del Producto 1</h5>
-                                                <p class="card-text">Breve descripción del producto 1.</p>
-                                                <p class="card-text">$XX.XX</p>
-                                                <button class="btn btn-primary">Agregar al carrito</button>
+                </section>
+                <!--DIVision-->
+                <aside class="col-md-4 d-flex align-items-center">
+                    <div class="my-5">
+                        <div class="row">
+                            <div id="productCarousel2" class="carousel slide my-3" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <div class="col-md-8 mx-auto p-3">
+                                            <div class="card product-card">
+                                                <img src="./img/img_1616522671_crop-PhotoRoom.png-PhotoRoom.png" class="card-img-top" alt="Imagen del producto 1">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Nombre del Producto 1</h5>
+                                                    <p class="card-text">Breve descripción del producto 1.</p>
+                                                    <p class="card-text">$XX.XX</p>
+                                                    <button class="btn btn-primary">Agregar al carrito</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="col-md-8 mx-auto p-3">
+                                            <div class="card">
+                                                <img src="./img/img_1616522671_crop-PhotoRoom.png-PhotoRoom.png" class="card-img-top" alt="Imagen del producto 2">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Nombre del Producto 2</h5>
+                                                    <p class="card-text">Breve descripción del producto 2.</p>
+                                                    <p class="card-text">$XX.XX</p>
+                                                    <button class="btn btn-primary">Agregar al carrito</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="col-md-8 mx-auto p-3">
+                                            <div class="card">
+                                                <img src="./img/img_1616522671_crop-PhotoRoom.png-PhotoRoom.png" class="card-img-top" alt="Imagen del producto 1">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Nombre del Producto 3</h5>
+                                                    <p class="card-text">Breve descripción del producto 3.</p>
+                                                    <p class="card-text">$XX.XX</p>
+                                                    <button class="btn btn-primary">Agregar al carrito</button>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="carousel-item">
-                                    <div class="col-md-8 mx-auto p-3">
-                                        <div class="card">
-                                            <img src="./img/img_1616522671_crop-PhotoRoom.png-PhotoRoom.png" class="card-img-top" alt="Imagen del producto 2">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Nombre del Producto 2</h5>
-                                                <p class="card-text">Breve descripción del producto 2.</p>
-                                                <p class="card-text">$XX.XX</p>
-                                                <button class="btn btn-primary">Agregar al carrito</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <div class="col-md-8 mx-auto p-3">
-                                        <div class="card">
-                                            <img src="./img/img_1616522671_crop-PhotoRoom.png-PhotoRoom.png" class="card-img-top" alt="Imagen del producto 1">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Nombre del Producto 3</h5>
-                                                <p class="card-text">Breve descripción del producto 3.</p>
-                                                <p class="card-text">$XX.XX</p>
-                                                <button class="btn btn-primary">Agregar al carrito</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                <a class="carousel-control-prev" href="#productCarousel2" role="button" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Anterior</span>
+                                </a>
+                                <a class="carousel-control-next" href="#productCarousel2" role="button" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Siguiente</span>
+                                </a>
                             </div>
-                            <a class="carousel-control-prev" href="#productCarousel2" role="button" data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Anterior</span>
-                            </a>
-                            <a class="carousel-control-next" href="#productCarousel2" role="button" data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Siguiente</span>
-                            </a>
                         </div>
                     </div>
-                </div>
-            </aside>
-        </div>
-        <!--DIVision--> 
-        <footer class="d-flex align-items-center justify-content-center text-center container-fluid" >
-            <div class="container ">
-                <div class="row">
-                    <div class="col">
-                        <a href="https://github.com/tomiiorti" target="_blank" class="me-4 github" rel="nofollow">
-                            <i class="fab fa-github"></i> GitHub
-                        </a>
-                        <a href="https://www.linkedin.com/in/tomasorti" target="_blank" class="me-4 linkedin" rel="nofollow">
-                            <i class="fab fa-linkedin"></i> Linkedin
-                        </a>
-                        <a href="https://www.instagram.com/tomiiorti" target="_blank" class="me-4 instagram" rel="nofollow">
-                            <i class="fab fa-instagram"></i> Instagram
-                        </a>
-                        <a href="mailto:tomas.orti99@gmail.com" class="me-4 gmail">
-                            <i class="fas fa-envelope"></i> Gmail
-                        </a>
-                        <a href="https://wa.me/+5401134191647" target="_blank" class="whatsapp" rel="nofollow">
-                            <i class="fab fa-whatsapp"></i> Mi Whatsapp
-                        </a>
-                    </div>
-                </div>
+                </aside>
             </div>
-        </footer>
+        <!--DIVision--> 
+            <footer class="d-flex align-items-center justify-content-center text-center container-fluid" >
+                <div class="container ">
+                    <div class="row">
+                        <div class="col">
+                            <a href="https://github.com/tomiiorti" target="_blank" class="me-4 github" rel="nofollow">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <a href="https://www.linkedin.com/in/tomasorti" target="_blank" class="me-4 linkedin" rel="nofollow">
+                                <i class="fab fa-linkedin"></i> Linkedin
+                            </a>
+                            <a href="https://www.instagram.com/tomiiorti" target="_blank" class="me-4 instagram" rel="nofollow">
+                                <i class="fab fa-instagram"></i> Instagram
+                            </a>
+                            <a href="mailto:tomas.orti99@gmail.com" class="me-4 gmail">
+                                <i class="fas fa-envelope"></i> Gmail
+                            </a>
+                            <a href="https://wa.me/+5401134191647" target="_blank" class="whatsapp" rel="nofollow">
+                                <i class="fab fa-whatsapp"></i> Mi Whatsapp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </footer>
+        </div>
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>

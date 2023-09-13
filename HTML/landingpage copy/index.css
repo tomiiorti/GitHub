@@ -4,7 +4,7 @@
 }
 .cabeza{
   height:8vh;
-  background:#000000 ;
+  background-color: rgba(0, 0, 0, 0.575);
 }
 .main{
   height: auto;
@@ -44,11 +44,6 @@ footer .whatsapp:hover {
 }
 footer{
   height: 6vh;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.575);
   justify-content: center;
 }
-.form{
-
-  background-color: black;
-}
-
