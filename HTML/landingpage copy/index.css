@@ -1,19 +1,20 @@
 .body{
   height: auto;
   width: auto;
-  background-color: red;
 }
 .cabeza{
-  height:10vh;
-  background:#28a745 ;
+  height:8vh;
+  background:#000000 ;
 }
-.col-md-6{
-  background-color: green;
+.main{
   height: auto;
+  background-image: url(./img/Gimnasio.avif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Esto puede ayudar a mantener la imagen fija en la ventana */
+  background-position: center center; /* Centra la imagen vertical y horizontalmente */
 }
-.col-md-4{
-  background-color: pink;
-}
+
 footer a {
   min-height: 2rem;
   font-family: "Poppins", sans-serif;
@@ -42,7 +43,12 @@ footer .whatsapp:hover {
   color: #09ff00a1; /* Cambia este valor al color deseado al pasar el cursor */
 }
 footer{
-  height: 10vh;
+  height: 6vh;
   background-color: black;
   justify-content: center;
 }
+.form{
+
+  background-color: black;
+}
+
