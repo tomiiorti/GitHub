@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/cliente.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body class="body">
+    <header class="">
+        <div class="m-4 d-flex justify-content-end">
+            <a href="cerrar_sesion.py" class="btn btn-secondary">Cerrar Sesión</a>
+        </div>
+    </header> 
+<main>
+    <section class="container">
+        <div class="container mt-5">
+            <h1>Rutina de Ejercicios</h1>
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link active" id="dia1-tab" data-bs-toggle="tab" href="#dia1" role="tab" aria-controls="dia1" aria-selected="true">Día 1</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="dia2-tab" data-bs-toggle="tab" href="#dia2" role="tab" aria-controls="dia2" aria-selected="false">Día 2</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="dia3-tab" data-bs-toggle="tab" href="#dia3" role="tab" aria-controls="dia3" aria-selected="false">Día 3</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="dia4-tab" data-bs-toggle="tab" href="#dia4" role="tab" aria-controls="dia4" aria-selected="false">Día 4</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="dia5-tab" data-bs-toggle="tab" href="#dia5" role="tab" aria-controls="dia5" aria-selected="false">Día 5</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="dia6-tab" data-bs-toggle="tab" href="#dia6" role="tab" aria-controls="dia6" aria-selected="false">Día 6</a>
+                </li>
+            </ul>
+    
+            <!-- Contenido de las pestañas -->
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="dia1" role="tabpanel" aria-labelledby="dia1-tab">
+                    <!-- Contenido del Día 1 (ejercicios) aquí -->
+                    <h2>Día 1</h2>
+                    <div class="d-flex flex-wrap justify-content-center">
+                        <div class="card m-2" style="width:150px; height: auto;">
+                            <div class="text-center p-1">
+                                <p>Levanta mancuernas pa1</p>
+                            </div>
+                            <div>
+                                <div class="img">
+                                    <img src="./img/descarga.jpeg" alt="" class="img-fluid">
+                                </div>
+                                <div class="text-center">
+                                    <p class="mb-2">3x12</p>
+                                    <p>Descripcion</p> <!-- Se extiende y muestra una breve descripción-->
+                                    <a class="nav-link border rounded-pill m-2" href="#" data-bs-toggle="collapse" data-bs-target="#descripcionAvatar" aria-expanded="false" aria-controls="descripcionAvatar">Ver Video</a> <!--Envia a una pagina con un video-->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card m-2" style="width:150px; height: auto;">
+                            <div class="text-center p-1">
+                                <p>Levanta mancuernas pa2</p>
+                            </div>
+                            <div>
+                                <div class="img">
+                                    <img src="./img/descarga.jpeg" alt="" class="img-fluid">
+                                </div>
+                                <div class="text-center">
+                                    <p class="mb-2">3x12</p>
+                                    <p>Descripcion</p> <!-- Se extiende y muestra una breve descripción-->
+                                    <a class="nav-link border rounded-pill m-2" href="#" data-bs-toggle="collapse" data-bs-target="#descripcionAvatar" aria-expanded="false" aria-controls="descripcionAvatar">Ver Video</a> <!--Envia a una pagina con un video-->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card m-2" style="width:150px; height: auto;">
+                            <div class="text-center p-1">
+                                <p>Levanta mancuernas pa3</p>
+                            </div>
+                            <div>
+                                <div class="img">
+                                    <img src="./img/descarga.jpeg" alt="" class="img-fluid">
+                                </div>
+                                <div class="text-center">
+                                    <p class="mb-2">3x12</p>
+                                    <p>Descripcion</p> <!-- Se extiende y muestra una breve descripción-->
+                                    <a class="nav-link border rounded-pill m-2" href="#" data-bs-toggle="collapse" data-bs-target="#descripcionAvatar" aria-expanded="false" aria-controls="descripcionAvatar">Ver Video</a> <!--Envia a una pagina con un video-->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card m-2" style="width:150px; height: auto;">
+                            <div class="text-center p-1">
+                                <p>Levanta mancuernas pa4</p>
+                            </div>
+                            <div>
+                                <div class="img">
+                                    <img src="./img/descarga.jpeg" alt="" class="img-fluid">
+                                </div>
+                                <div class="text-center">
+                                    <p class="mb-2">3x12</p>
+                                    <p>Descripcion</p> <!-- Se extiende y muestra una breve descripción-->
+                                    <a class="nav-link border rounded-pill m-2" href="#" data-bs-toggle="collapse" data-bs-target="#descripcionAvatar" aria-expanded="false" aria-controls="descripcionAvatar">Ver Video</a> <!--Envia a una pagina con un video-->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card m-2" style="width:150px; height: auto;">
+                            <div class="text-center p-1">
+                                <p>Levanta mancuernas pa5</p>
+                            </div>
+                            <div>
+                                <div class="img">
+                                    <img src="./img/descarga.jpeg" alt="" class="img-fluid">
+                                </div>
+                                <div class="text-center">
+                                    <p class="mb-2">3x12</p>
+                                    <p>Descripcion</p> <!-- Se extiende y muestra una breve descripción-->
+                                    <a class="nav-link border rounded-pill m-2" href="#" data-bs-toggle="collapse" data-bs-target="#descripcionAvatar" aria-expanded="false" aria-controls="descripcionAvatar">Ver Video</a> <!--Envia a una pagina con un video-->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card m-2" style="width:150px; height: auto;">
+                            <div class="text-center p-1">
+                                <p>Levanta mancuernas pa6</p>
+                            </div>
+                            <div>
+                                <div class="img">
+                                    <img src="./img/descarga.jpeg" alt="" class="img-fluid">
+                                </div>
+                                <div class="text-center">
+                                    <p class="mb-2">3x12</p>
+                                    <p>Descripcion</p> <!-- Se extiende y muestra una breve descripción-->
+                                    <a class="nav-link border rounded-pill m-2" href="#" data-bs-toggle="collapse" data-bs-target="#descripcionAvatar" aria-expanded="false" aria-controls="descripcionAvatar">Ver Video</a> <!--Envia a una pagina con un video-->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card m-2" style="width:150px; height: auto;">
+                            <div class="text-center p-1">
+                                <p>Levanta mancuernas pa7</p>
+                            </div>
+                            <div>
+                                <div class="img">
+                                    <img src="./img/descarga.jpeg" alt="" class="img-fluid">
+                                </div>
+                                <div class="text-center">
+                                    <p class="mb-2">3x12</p>
+                                    <p>Descripcion</p> <!-- Se extiende y muestra una breve descripción-->
+                                    <a class="nav-link border rounded-pill m-2" href="#" data-bs-toggle="collapse" data-bs-target="#descripcionAvatar" aria-expanded="false" aria-controls="descripcionAvatar">Ver Video</a> <!--Envia a una pagina con un video-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="dia2" role="tabpanel" aria-labelledby="dia2-tab">
+                    <!-- Contenido del Día 2 (ejercicios) aquí -->
+                    <h2>Día 2</h2>
+                    <p>Aquí puedes describir los ejercicios para el Día 2.</p>
+                </div>
+                <div class="tab-pane fade" id="dia3" role="tabpanel" aria-labelledby="dia3-tab">
+                    <!-- Contenido del Día 2 (ejercicios) aquí -->
+                    <h2>Día 3</h2>
+                    <p>Aquí puedes describir los ejercicios para el Día 3.</p>
+                </div>
+                <div class="tab-pane fade" id="dia4" role="tabpanel" aria-labelledby="dia4-tab">
+                    <!-- Contenido del Día 2 (ejercicios) aquí -->
+                    <h2>Día 4</h2>
+                    <p>Aquí puedes describir los ejercicios para el Día 4.</p>
+                </div>
+                <div class="tab-pane fade" id="dia5" role="tabpanel" aria-labelledby="dia5-tab">
+                    <!-- Contenido del Día 2 (ejercicios) aquí -->
+                    <h2>Día 5</h2>
+                    <p>Aquí puedes describir los ejercicios para el Día 5.</p>
+                </div>
+                <div class="tab-pane fade" id="dia6" role="tabpanel" aria-labelledby="dia6-tab">
+                    <!-- Contenido del Día 2 (ejercicios) aquí -->
+                    <h2>Día 6</h2>
+                    <p>Aquí puedes describir los ejercicios para el Día 6.</p>
+                </div>
+                <!-- Agrega más pestañas y contenido según tus necesidades -->
+            </div>
+        </div>
+        <div></div>
+    </section>
+
+
+
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+</html>
