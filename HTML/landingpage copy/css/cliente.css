@@ -1,3 +1,8 @@
 .body{
     background-image: linear-gradient(to right, rgb(58, 87, 58), rgb(39, 58, 39));
 }
+.header{
+    background-color: rgba(0, 0, 0, 0.308);
+    height: 8vh;
+    
+}
