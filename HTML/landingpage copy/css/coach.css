@@ -1,0 +1,21 @@
+.body{
+    background-image: linear-gradient(to right, rgb(94, 94, 94), rgb(185, 185, 185));
+    overflow-x: hidden;
+}
+.header{
+    background-color: rgba(0, 0, 0, 0.308);
+    height: 8vh;
+}
+li .nav-link {
+    color: white;
+}
+.col-md-3{
+    display:none;
+}
+
+.nav-link:active,
+    .nav-link:focus {
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        background-color: rgb(94, 94, 94);
+    }
