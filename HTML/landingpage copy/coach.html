@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="./css/coach.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <title>Document</title>
+    <title>Administrador</title>
 </head>
 <body class="body">
     <header>
@@ -28,7 +28,10 @@
                             <a class="nav-link text-white-50" id="routine-tab" data-bs-toggle="tab" href="#routine" role="tab" aria-controls="routine" aria-selected="false">Rutinas</a>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <a class="nav-link text-white-50"  id="exercise-tab" data-bs-toggle="tab" href="#exercise" role="tab" aria-controls="exercise" aria-selected="false">Ejercicios</a>
+                            <a class="nav-link text-white-50" id="exercise-tab" data-bs-toggle="tab" href="#exercise" role="tab" aria-controls="exercise" aria-selected="false">Ejercicios</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link text-white-50" id="myroutine-tab" href="#">Mi Rutina</a> <!-- cambiar el href por la pagina "cliente.html" para que pueda ver su rutina propia-->
                         </li>
                     </ul>
                 </div>
@@ -54,10 +57,94 @@
                     <h2>Rutinas</h2>
                     <p>Aquí puedes describir los ejercicios para el Día 3.</p>
                 </div>
-                <div class="tab-pane fade" id="exercise" role="tabpanel" aria-labelledby="exercise-tab">
+                <div class="tab-pane fade d-flex flex-column mb-3 justify-content-center" id="exercise" role="tabpanel" aria-labelledby="exercise-tab">
                     <!-- Contenido del Día 2 (ejercicios) aquí -->
                     <h2>Ejercicios</h2>
-                    <p>Aquí puedes describir los ejercicios para el Día 4.</p>
+                    <!-- Agrega esta sección dentro de tu <main> -->
+                    <section class="exercise-section m-4">
+                        <!-- Buscador -->
+                        <div class="exercise-search col-md-2">
+                            <input type="text" class="form-control" placeholder="Buscar ejercicios">
+                        </div>
+                        <div class="ejercicios d-flex justify-content-center flex-wrap">
+                            <div class="card m-2" style="width:150px; height: auto;">
+                                <div class="text-center p-1">
+                                    <p>Levanta mancuernas pa1</p>
+                                </div>
+                                <div>
+                                    <div class="img">
+                                        <img src="./img/descarga.jpeg" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="text-center">
+                                        <p class="mb-2">3x12</p>
+                                        <p>Descripcion</p> <!-- Se extiende y muestra una breve descripción-->
+                                        <a class="nav-link border rounded-pill m-2" href="#" data-bs-toggle="collapse" data-bs-target="#descripcionAvatar" aria-expanded="false" aria-controls="descripcionAvatar">Ver Video</a> <!--Envia a una pagina con un video-->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card m-2" style="width:150px; height: auto;">
+                                <div class="text-center p-1">
+                                    <p>Levanta mancuernas pa2</p>
+                                </div>
+                                <div>
+                                    <div class="img">
+                                        <img src="./img/descarga.jpeg" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="text-center">
+                                        <p class="mb-2">3x12</p>
+                                        <p>Descripcion</p> <!-- Se extiende y muestra una breve descripción-->
+                                        <a class="nav-link border rounded-pill m-2" href="#" data-bs-toggle="collapse" data-bs-target="#descripcionAvatar" aria-expanded="false" aria-controls="descripcionAvatar">Ver Video</a> <!--Envia a una pagina con un video-->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card m-2" style="width:150px; height: auto;">
+                                <div class="text-center p-1">
+                                    <p>Levanta mancuernas pa3</p>
+                                </div>
+                                <div>
+                                    <div class="img">
+                                        <img src="./img/descarga.jpeg" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="text-center">
+                                        <p class="mb-2">3x12</p>
+                                        <p>Descripcion</p> <!-- Se extiende y muestra una breve descripción-->
+                                        <a class="nav-link border rounded-pill m-2" href="#" data-bs-toggle="collapse" data-bs-target="#descripcionAvatar" aria-expanded="false" aria-controls="descripcionAvatar">Ver Video</a> <!--Envia a una pagina con un video-->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card m-2" style="width:150px; height: auto;">
+                                <div class="text-center p-1">
+                                    <p>Levanta mancuernas pa4</p>
+                                </div>
+                                <div>
+                                    <div class="img">
+                                        <img src="./img/descarga.jpeg" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="text-center">
+                                        <p class="mb-2">3x12</p>
+                                        <p>Descripcion</p> <!-- Se extiende y muestra una breve descripción-->
+                                        <a class="nav-link border rounded-pill m-2" href="#" data-bs-toggle="collapse" data-bs-target="#descripcionAvatar" aria-expanded="false" aria-controls="descripcionAvatar">Ver Video</a> <!--Envia a una pagina con un video-->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card m-2" style="width:150px; height: auto;">
+                                <div class="text-center p-1">
+                                    <p>Levanta mancuernas pa5</p>
+                                </div>
+                                <div>
+                                    <div class="img">
+                                        <img src="./img/descarga.jpeg" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="text-center">
+                                        <p class="mb-2">3x12</p>
+                                        <p>Descripcion</p> <!-- Se extiende y muestra una breve descripción-->
+                                        <a class="nav-link border rounded-pill m-2" href="#" data-bs-toggle="collapse" data-bs-target="#descripcionAvatar" aria-expanded="false" aria-controls="descripcionAvatar">Ver Video</a> <!--Envia a una pagina con un video-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    </section>
                 </div>
             </div>
         </div>
