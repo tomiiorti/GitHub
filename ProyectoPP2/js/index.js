@@ -67,3 +67,10 @@ window.sr = ScrollReveal();
         const menu = document.querySelector('.menu');
         menu.classList.toggle('active');
     }
+document.getElementById('ajustesBtn').addEventListener('mouseover', function() {
+    document.getElementById('ajustesDiv').classList.add('hover');
+});
+
+document.getElementById('ajustesBtn').addEventListener('mouseout', function() {
+    document.getElementById('ajustesDiv').classList.remove('hover');
+});

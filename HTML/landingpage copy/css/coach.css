@@ -1,21 +1,26 @@
-.body{
+.body {
     background-image: linear-gradient(to right, rgb(94, 94, 94), rgb(185, 185, 185));
     overflow-x: hidden;
 }
-.header{
+
+.header {
     background-color: rgba(0, 0, 0, 0.308);
     height: 8vh;
+    position: relative;
+    z-index: 2; /* Asegura que el encabezado esté por encima del contenido */
 }
+
 li .nav-link {
     color: white;
 }
-.col-md-3{
-    display:none;
+
+.col-md-3 {
+    display: none;
 }
 
 .nav-link:active,
-    .nav-link:focus {
-        border-top-left-radius: 10px;
-        border-bottom-left-radius: 10px;
-        background-color: rgb(94, 94, 94);
-    }
+.nav-link:focus {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: rgb(94, 94, 94);
+}

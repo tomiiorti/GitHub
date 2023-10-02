@@ -9,54 +9,61 @@
     <title>Document</title>
 </head>
 <body class="body">
-    <header class="header d-flex justify-content-center align-items-center">
-        <div class="text-center col-md-8">
-            <a class="" href=""> Gimnasio</a>
-        </div>
-        <div class="m-4 d-flex justify-content-end">
-            <a href="cerrar_sesion.py" class="btn btn-danger">Cerrar Sesión</a>
-        </div>
-    </header> 
-<main>
-    <div class="d-flex ">
-        <aside class="bg-dark col-md-3 d-flex flex-column  p-3" style="height: 92vh;">
-                <ul class="nav flex-column" id="myTab" role="tablist">
-                    <li class="nav-item" role="presentation">
-                        <a class="nav-link active text-white-50" id="user-tab" data-bs-toggle="tab" href="#user" role="tab" aria-controls="user" aria-selected="true">Usuarios</a>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <a class="nav-link text-white-50" id="routine-tab" data-bs-toggle="tab" href="#routine" role="tab" aria-controls="routine" aria-selected="false">Rutinas</a>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <a class="nav-link text-white-50"  id="exercise-tab" data-bs-toggle="tab" href="#exercise" role="tab" aria-controls="exercise" aria-selected="false">Ejercicios</a>
-                </ul>
-        </aside>
-        
+    <header>
+        <nav class="navbar bg-body-tertiary fixed-top">
+          <div class="container-fluid">
+            <button class="navbar-toggler" id="ajusteBtn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <div id="ajustesDiv" class="ajustes">
+                    <i class="fa-solid fa-magnifying-glass" style="color: #551e25;"></i>
+                </div>
+            </button>
+            <a class="navbar-brand text-center" href="#">Gimnasio</a>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="bg-dark d-flex flex-column  p-3" style="height: 100vh;">
+                    <ul class="nav flex-column" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link active text-white-50" id="user-tab" data-bs-toggle="tab" href="#user" role="tab" aria-controls="user" aria-selected="true">Usuarios</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link text-white-50" id="routine-tab" data-bs-toggle="tab" href="#routine" role="tab" aria-controls="routine" aria-selected="false">Rutinas</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link text-white-50"  id="exercise-tab" data-bs-toggle="tab" href="#exercise" role="tab" aria-controls="exercise" aria-selected="false">Ejercicios</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="m-4 d-flex justify-content-end">
+                <a href="cerrar_sesion.py" class="btn btn-danger">Cerrar Sesión</a>
+            </div>
+          </div>
+        </nav>
+    </header>
+      
+    <main>
+        <div style="height:12vh"></div>
         <div class="col-md-10 m-4">
             <div class="tab-content d-flex justify-content-between" id="myTabContent">
                 <div class="tab-pane fade show active" id="user" role="tabpanel" aria-labelledby="user-tab">
                     <!-- Contenido del Día 2 (ejercicios) aquí -->
-                    <h2>Día 2</h2>
+                    <h2>Usuario</h2>
                     <p>Aquí puedes describir los ejercicios para el Día 2.</p>
                 </div>
                 <div class="tab-pane fade" id="routine" role="tabpanel" aria-labelledby="routine-tab">
                     <!-- Contenido del Día 2 (ejercicios) aquí -->
-                    <h2>Día 3</h2>
+                    <h2>Rutinas</h2>
                     <p>Aquí puedes describir los ejercicios para el Día 3.</p>
                 </div>
                 <div class="tab-pane fade" id="exercise" role="tabpanel" aria-labelledby="exercise-tab">
                     <!-- Contenido del Día 2 (ejercicios) aquí -->
-                    <h2>Día 4</h2>
+                    <h2>Ejercicios</h2>
                     <p>Aquí puedes describir los ejercicios para el Día 4.</p>
                 </div>
             </div>
         </div>
-    </div>
-    
+    </main>
 
-</main>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </body>
 </html>
