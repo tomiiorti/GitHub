@@ -12,7 +12,11 @@ public class main {
         FileReader palabra = null;
         String palabraDelDia = null; // Declaración dentro del bloque try
         List<String> listaDePalabras = new ArrayList<>();
-
+        char[] palabraOculta = new char[5];
+        char[] entradaArray = new char[5];
+        char[] palabraDelDiaArray = new char [5];
+        boolean salio = false;
+        
         try {
             palabra = new FileReader("C:/Users/tomas/OneDrive/Escritorio/GitHub/Java/src/palabraDelDia/destino.txt");
             BufferedReader buf = new BufferedReader(palabra);
@@ -24,41 +28,67 @@ public class main {
             }
 
             palabraDelDia = listaDePalabras.get(random.nextInt(listaDePalabras.size()));
-
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
         }
 
-        for (int i = 5; i >=1; i--) {
+        for (int i = 6; i >=1; i--) {
+        	for (int k = 0; k < 5; k++) {
+                palabraOculta[k] = '_';
+            }
+        	System.out.println("La palabra era: " + palabraDelDia);
             System.out.println("Ingrese una palabra de 5 letras");
-            System.out.println("Tiene " + i + " intentos");
+            System.out.print("Tiene " + i + " intentos:");
             String entrada = sc.next();
             
             while (!listaDePalabras.contains(entrada)) {
-            	System.out.println("La palabra ingresada no esta en el texto \n Ingrese nuevamente una palabra");
+            	
+            	System.out.print("La palabra ingresada no esta en el texto o no tiene 5 letras. \nIngrese nuevamente una palabra: ");
             	entrada = sc.next();	
             }
-            /*while (entrada !=  ) {
-            	
-            	if (listaDePalabras.contains(entrada)) {
-                    System.out.println("¡La palabra está en la lista!");
-                    break; // Sale del bucle si la palabra es correcta
-                } else {
-                    System.out.println("Esa palabra no está en la lista. Inténtalo de nuevo.");
-                }
-            }
-            
             if (palabraDelDia != null && palabraDelDia.equals(entrada)) {
-                System.out.println("¡Adivinaste la palabra del día!");
+            	
+                System.out.println("Adivinaste la palabra del dia! \nSos maquina");
+                salio = true;
                 break; // Sale del bucle si la palabra es correcta
+                
             } else {
-                System.out.println("Esa no es la palabra del día. Inténtalo de nuevo.");
-            }*/
+            	entradaArray = entrada.toCharArray();
+            	palabraDelDiaArray = palabraDelDia.toCharArray();
+            	for (int j = 0; j < palabraDelDia.length(); j++) {
+            		
+            		char letraSecreta = palabraDelDia.charAt(j);
+            		char letraIngresada = entrada.charAt(j);
+            		if (letraSecreta == letraIngresada) {
+            			
+            			palabraOculta[j] = Character.toUpperCase(letraIngresada);
+            			entradaArray[j] = '_';
+            			palabraDelDiaArray[j] = '_';
+            		}
+            	}
+            	for (int j = 0 ; j < palabraDelDia.length(); j++) {
+            		char letraIngresada = entrada.charAt(j);
+                    for (int k = 0; k < 5; k++) {
+                        if (palabraDelDiaArray[k] == letraIngresada) {
+                            palabraDelDiaArray[k] = '_';
+                            entradaArray[j] = '_';
+                            palabraOculta[j] = Character.toLowerCase(letraIngresada);
+                            break;
+                        }
+                    }
+            	}
+                String palabraOcultaStr = new String(palabraOculta);
+            	System.out.println("Palabra ingresada :" + entrada);
+            	System.out.println("Quedo: " + palabraOcultaStr);
+            	System.out.println("_________________________");
+            }
+        }
+        if (salio == false) {
+        	System.out.println("Mal ahi mirrey, no se te dio, la palabra era: " + palabraDelDia);
         }
     }
 }
+
 	        /*
 	      
 	        FileReader palabras;
