@@ -36,7 +36,6 @@ public class main {
         	for (int k = 0; k < 5; k++) {
                 palabraOculta[k] = '_';
             }
-        	System.out.println("La palabra era: " + palabraDelDia);
             System.out.println("Ingrese una palabra de 5 letras");
             System.out.print("Tiene " + i + " intentos:");
             String entrada = sc.next();

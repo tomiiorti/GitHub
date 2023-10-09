@@ -46,11 +46,58 @@
     <main>
         <!--<div style="height:12vh"></div> -->
         <div class="col-md-10 m-4">
-            <div class="tab-content d-flex justify-content-between" id="myTabContent">
+            <div class="tab-content" id="myTabContent">
                 <div class="tab-pane fade show active" id="user" role="tabpanel" aria-labelledby="user-tab">
                     <!-- Contenido del Día 2 (ejercicios) aquí -->
                     <h2>Usuario</h2>
                     <p>Aquí puedes describir los ejercicios para el Día 2.</p>
+                    <section class="d-flex justify-content-center">
+                        <div class="d-flex jusitfy-content-center">
+                            <div class="exercise-search col-md-2">
+                                <input type="text" class="form-control" placeholder="Buscar ejercicios">
+                            </div>
+                            <div class="mx-3 d-flex justify-content-end">
+                                <a href="cerrar_sesion.py" class="btn btn-light">Crear +</a>
+                            </div>
+                            <div class="container">
+                                <h1>Tabla de Usuarios</h1>
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Número</th>
+                                            <th scope="col">Nombre</th>
+                                            <th scope="col">Usuario</th>
+                                            <th scope="col">Contraseña</th>
+                                            <th scope="col">Tipo (admin/cliente)</th>
+                                            <th scope="col">Modificar</th>
+                                            <th scope="col">Eliminar</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>John Doe</td>
+                                            <td>johndoe</td>
+                                            <td>********</td>
+                                            <td>Cliente</td>
+                                            <td><button class="btn btn-primary">Modificar</button></td>
+                                            <td><button class="btn btn-danger">Eliminar</button></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td>Jane Smith</td>
+                                            <td>janesmith</td>
+                                            <td>********</td>
+                                            <td>Admin</td>
+                                            <td><button class="btn btn-primary">Modificar</button></td>
+                                            <td><button class="btn btn-danger">Eliminar</button></td>
+                                        </tr>
+                                        <!-- Puedes agregar más filas según sea necesario -->
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </section>
                 </div>
                 <div class="tab-pane fade" id="routine" role="tabpanel" aria-labelledby="routine-tab">
                     <!-- Contenido del Día 2 (ejercicios) aquí -->
