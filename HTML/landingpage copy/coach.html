@@ -45,56 +45,67 @@
       
     <main>
         <!--<div style="height:12vh"></div> -->
-        <div class="col-md-10 m-4">
+        <div class="col-md-12 m-4">
             <div class="tab-content" id="myTabContent">
                 <div class="tab-pane fade show active" id="user" role="tabpanel" aria-labelledby="user-tab">
                     <!-- Contenido del Día 2 (ejercicios) aquí -->
                     <h2>Usuario</h2>
                     <p>Aquí puedes describir los ejercicios para el Día 2.</p>
                     <section>
-                        <div class="d-flex jusitfy-content-center">
-                            <div class="exercise-search col-md-2">
-                                <input type="text" class="form-control" placeholder="Buscar ejercicios">
-                            </div>
-                            <div class="mx-3 d-flex justify-content-end">
-                                <a href="cerrar_sesion.py" class="btn btn-light">Crear +</a>
-                            </div>
-                            
-                        </div>
-                        <div class="">
+                        <div class="container">
                             <h4>Tabla de Usuarios</h4>
+                            <div class="d-flex jusitfy-content-center my-4">
+                                <div class="exercise-search col-md-2">
+                                    <input type="text" class="form-control" placeholder="Buscar ejercicios">
+                                </div>
+                                <div class="mx-3 d-flex justify-content-end">
+                                    <a href="cerrar_sesion.py" class="btn btn-light">Crear +</a>
+                                </div>
+                                
+                            </div>
                             <table class="table">
                                 <thead>
                                     <tr>
-                                        <th scope="col">Número</th>
-                                        <th scope="col">Nombre</th>
-                                        <th scope="col">Usuario</th>
-                                        <th scope="col">Contraseña</th>
-                                        <th scope="col">Tipo (admin/cliente)</th>
-                                        <th scope="col">Modificar</th>
-                                        <th scope="col">Eliminar</th>
+                                        <td scope="col" class="col-md-1">Número</td>
+                                        <td scope="col" class="col-md-2">Nombre</td>
+                                        <td scope="col" class="col-md-2">Usuario</td>
+                                        <td scope="col" class="col-md-2">Contraseña</td>
+                                        <td scope="col" class="col-md-1">Tipo (admin/cliente)</td>
+                                        <td scope="col" class="col-md-1">Modificar</td>
+                                        <td scope="col" class="col-md-1">Eliminar</td>
                                     </tr>
                                 </thead>
                                 <tbody>
+                                    
+                                    <?php
+                                    $sql="SELECT * from t_persona";
+                                    $result=mysqli_query($conexion,$sq1) ; 
+
+                                    while($mostrar=mysqli_fetch_array($result)){
+                                    ?>
+
                                     <tr>
-                                        <th scope="row">1</th>
-                                        <td>John Doe</td>
-                                        <td>johndoe</td>
-                                        <td>********</td>
-                                        <td>Cliente</td>
-                                        <td><button class="btn btn-primary">Modificar</button></td>
-                                        <td><button class="btn btn-danger">Eliminar</button></td>
+                                        <th scope="row"><?php echo $mostrar['id'] ?></th>
+                                        <td><?php echo $mostrar['nombre'] ?></td>
+                                        <td><?php echo $mostrar['user'] ?></td>
+                                        <td><?php echo $mostrar['password'] ?></td>
+                                        <td><?php echo $mostrar['type'] ?></td>
+                                        <td><?php echo $mostrar[''] ?></td> <!--Modificar al archivo que modifica-->
+                                        <td><?php echo $mostrar[''] ?></td> <!--Eliminar registro-->
                                     </tr>
+
+                                    <?php
+                                    }
+                                    ?>
                                     <tr>
-                                        <th scope="row">2</th>
-                                        <td>Jane Smith</td>
-                                        <td>janesmith</td>
-                                        <td>********</td>
-                                        <td>Admin</td>
-                                        <td><button class="btn btn-primary">Modificar</button></td>
-                                        <td><button class="btn btn-danger">Eliminar</button></td>
+                                        <th scope="row">x</th>
+                                        <td>a</td>
+                                        <td>b</td>
+                                        <td>c</td>
+                                        <td>d</td>
+                                        <td>e</td> <!--Modificar al archivo que modifica-->
+                                        <td>f</td> <!--Eliminar registro-->
                                     </tr>
-                                    <!-- Puedes agregar más filas según sea necesario -->
                                 </tbody>
                             </table>
                         </div>
@@ -197,7 +208,11 @@
             </div>
         </div>
     </main>
-  
+    <!-- Aca es la conexion de la base de datos con esto
+    <?php
+        $conexion=mysqli_connect('localhost','root','', 'pruebas');
+    ?>
+    -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </body>
