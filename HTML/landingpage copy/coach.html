@@ -54,25 +54,25 @@
                             <h4>Tabla de Usuarios</h4>
                             <div class="d-flex jusitfy-content-center my-4">
                                 <div class="exercise-search col-md-2">
-                                    <input type="text" class="form-control" placeholder="Buscar ejercicios">
+                                    <input type="text" class="form-control" placeholder="Buscar usuario">
                                 </div>
                                 <div class="mx-3 d-flex justify-content-end">
-                                    <a href="cerrar_sesion.py" class="btn btn-light">Crear +</a>
+                                    <a href="" class="btn btn-success border">Crear +</a><!-- href al codigo para crear-->
                                 </div>
                                 
                             </div>
                             <div class="col-md-12">
-                                <table class="" style="width:100%;">
-                                    <tr class="text-center">
-                                        <th scope="col" class="">Número</th>
-                                        <th scope="col" class="">Nombre</th>
-                                        <th scope="col" class="">Usuario</th>
-                                        <th scope="col" class="">Contraseña</th>
-                                        <th scope="col" class="">Tipo (admin/cliente)</th>
-                                        <th scope="col" class="">Modificar</th>
-                                        <th scope="col" class="">Eliminar</th>
+                                <table class="table-bordered" style="width:100%;">
+                                    <tr class="text-center fs-4">
+                                        <th scope="col" class="col-md-1">Número</th>
+                                        <th scope="col" class="col-md-2">Nombre</th>
+                                        <th scope="col" class="col-md-2">Usuario</th>
+                                        <th scope="col" class="col-md-2">Contraseña</th>
+                                        <th scope="col" class="col-md-1">Tipo</th>
+                                        <th scope="col" class="col-md-1">Modificar</th>
+                                        <th scope="col" class="col-md-1">Eliminar</th>
                                     </tr>
-                                <tbody class="table-bordered">
+                                <tbody class="fs-3">
                                     
                                     <?php
                                     $sql="SELECT * from t_persona";
