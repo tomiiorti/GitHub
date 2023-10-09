@@ -25,9 +25,6 @@
                             <a class="nav-link active text-white-50 fs-2 p-3" id="user-tab" data-bs-toggle="tab" href="#user" role="tab" aria-controls="user" aria-selected="true">Usuarios</a>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <a class="nav-link text-white-50 fs-2 p-3" id="routine-tab" data-bs-toggle="tab" href="#routine" role="tab" aria-controls="routine" aria-selected="false">Rutinas</a>
-                        </li>
-                        <li class="nav-item" role="presentation">
                             <a class="nav-link text-white-50 fs-2 p-3" id="exercise-tab" data-bs-toggle="tab" href="#exercise" role="tab" aria-controls="exercise" aria-selected="false">Ejercicios</a>
                         </li>
                         <li class="nav-item" role="presentation">
@@ -57,7 +54,7 @@
                                     <input type="text" class="form-control" placeholder="Buscar usuario">
                                 </div>
                                 <div class="mx-3 d-flex justify-content-end">
-                                    <a href="" class="btn btn-success border">Crear +</a><!-- href al codigo para crear-->
+                                    <a href="" class="btn btn-success border">Nuevo Usuario</a><!-- href al codigo para crear-->
                                 </div>
                                 
                             </div>
@@ -71,6 +68,7 @@
                                         <th scope="col" class="col-md-1">Tipo</th>
                                         <th scope="col" class="col-md-1">Modificar</th>
                                         <th scope="col" class="col-md-1">Eliminar</th>
+                                        <th scope="col" class="col-md-2">Rutina</th>
                                     </tr>
                                 <tbody class="">
                                     
@@ -89,6 +87,7 @@
                                         <td><?php echo $mostrar['type'] ?></td>
                                         <td><?php echo $mostrar[''] ?></td> <!--Modificar al archivo que modifica-->
                                         <td><?php echo $mostrar[''] ?></td> <!--Eliminar registro-->
+                                        <td><?php echo $mostrar[''] ?></td> <!--Modificar Rutina-->
                                     </tr>
 
                                     <?php
@@ -100,8 +99,9 @@
                                         <td>b</td>
                                         <td>c</td>
                                         <td>d</td>
-                                        <td>e</td> <!--Modificar al archivo que modifica-->
-                                        <td>f</td> <!--Eliminar registro-->
+                                        <td>e</td> <!--Boton Modificar al archivo que modifica-->
+                                        <td>f</td> <!--Boton Eliminar registro-->
+                                        <td>r</td> <!--Boton Modificar Rutina-->
                                     </tr>
                                     
                                 </tbody>
@@ -126,36 +126,7 @@
                             <input type="text" class="form-control" placeholder="Buscar ejercicios">
                         </div>
                         <div class="ejercicios d-flex justify-content-center flex-wrap">
-                            <div class="card m-2 col-md-2" style="height: auto;">
-                                <div class="text-center p-1">
-                                    <p>Levanta mancuernas pa1</p>
-                                </div>
-                                <div>
-                                    <div class="img">
-                                        <img src="./img/descarga.jpeg" alt="" class="img-fluid">
-                                    </div>
-                                    <div class="text-center">
-                                        <p class="mb-2">3x12</p>
-                                        <p>Descripcion</p> <!-- Se extiende y muestra una breve descripción-->
-                                        <a class="nav-link border rounded-pill m-2" href="#" data-bs-toggle="collapse" data-bs-target="#descripcionAvatar" aria-expanded="false" aria-controls="descripcionAvatar">Ver Video</a> <!--Envia a una pagina con un video-->
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card m-2 col-md-2" style="height: auto;">
-                                <div class="text-center p-1">
-                                    <p>Levanta mancuernas pa2</p>
-                                </div>
-                                <div>
-                                    <div class="img">
-                                        <img src="./img/descarga.jpeg" alt="" class="img-fluid">
-                                    </div>
-                                    <div class="text-center">
-                                        <p class="mb-2">3x12</p>
-                                        <p>Descripcion</p> <!-- Se extiende y muestra una breve descripción-->
-                                        <a class="nav-link border rounded-pill m-2" href="#" data-bs-toggle="collapse" data-bs-target="#descripcionAvatar" aria-expanded="false" aria-controls="descripcionAvatar">Ver Video</a> <!--Envia a una pagina con un video-->
-                                    </div>
-                                </div>
-                            </div>
+                            
                             <div class="card m-2 col-md-2" style="height: auto;">
                                 <div class="text-center p-1">
                                     <p>Levanta mancuernas pa3</p>
@@ -167,40 +138,12 @@
                                     <div class="text-center">
                                         <p class="mb-2">3x12</p>
                                         <p>Descripcion</p> <!-- Se extiende y muestra una breve descripción-->
-                                        <a class="nav-link border rounded-pill m-2" href="#" data-bs-toggle="collapse" data-bs-target="#descripcionAvatar" aria-expanded="false" aria-controls="descripcionAvatar">Ver Video</a> <!--Envia a una pagina con un video-->
+                                        <button class="btn btn-primary rounded-pill m-2"><i class="fa-regular fa-pen-to-square"></i></button> <!-- Botón para Modificar -->
+                                        <button class="btn btn-danger rounded-pill m-2"><i class="fa-solid fa-trash"></i></button> <!-- Botón para Eliminar -->
                                     </div>
                                 </div>
                             </div>
-                            <div class="card m-2 col-md-2" style="height: auto;">
-                                <div class="text-center p-1">
-                                    <p>Levanta mancuernas pa4</p>
-                                </div>
-                                <div>
-                                    <div class="img">
-                                        <img src="./img/descarga.jpeg" alt="" class="img-fluid">
-                                    </div>
-                                    <div class="text-center">
-                                        <p class="mb-2">3x12</p>
-                                        <p>Descripcion</p> <!-- Se extiende y muestra una breve descripción-->
-                                        <a class="nav-link border rounded-pill m-2" href="#" data-bs-toggle="collapse" data-bs-target="#descripcionAvatar" aria-expanded="false" aria-controls="descripcionAvatar">Ver Video</a> <!--Envia a una pagina con un video-->
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card m-2 col-md-2" style="height: auto;">
-                                <div class="text-center p-1">
-                                    <p>Levanta mancuernas pa5</p>
-                                </div>
-                                <div>
-                                    <div class="img">
-                                        <img src="./img/descarga.jpeg" alt="" class="img-fluid">
-                                    </div>
-                                    <div class="text-center">
-                                        <p class="mb-2">3x12</p>
-                                        <p>Descripcion</p> <!-- Se extiende y muestra una breve descripción-->
-                                        <a class="nav-link border rounded-pill m-2" href="#" data-bs-toggle="collapse" data-bs-target="#descripcionAvatar" aria-expanded="false" aria-controls="descripcionAvatar">Ver Video</a> <!--Envia a una pagina con un video-->
-                                    </div>
-                                </div>
-                            </div>
+                            <!-- hacer el loop como en el de usuarios para mostrar todos los ejercicios-->
                         </div>
                     
                     </section>
