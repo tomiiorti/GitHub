@@ -1,6 +1,6 @@
 .body {
     background-image: linear-gradient(to right, rgb(94, 94, 94), rgb(185, 185, 185));
-    overflow-x: hidden;
+
 }
 
 .header {
@@ -47,3 +47,4 @@ td {
     text-align: center;
     justify-content: center;
 }
+
