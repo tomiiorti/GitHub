@@ -63,18 +63,16 @@
                                 </div>
                                 
                             </div>
-                            <table class="table">
-                                <thead>
+                            <table class="table-primary">
                                     <tr>
-                                        <td scope="col" class="col-md-1">Número</td>
-                                        <td scope="col" class="col-md-2">Nombre</td>
-                                        <td scope="col" class="col-md-2">Usuario</td>
-                                        <td scope="col" class="col-md-2">Contraseña</td>
-                                        <td scope="col" class="col-md-1">Tipo (admin/cliente)</td>
-                                        <td scope="col" class="col-md-1">Modificar</td>
-                                        <td scope="col" class="col-md-1">Eliminar</td>
+                                        <th scope="col" class="col-md-1">Número</th>
+                                        <th scope="col" class="col-md-2">Nombre</th>
+                                        <th scope="col" class="col-md-2">Usuario</th>
+                                        <th scope="col" class="col-md-2">Contraseña</th>
+                                        <th scope="col" class="col-md-1">Tipo (admin/cliente)</th>
+                                        <th scope="col" class="col-md-1">Modificar</th>
+                                        <th scope="col" class="col-md-1">Eliminar</th>
                                     </tr>
-                                </thead>
                                 <tbody>
                                     
                                     <?php
@@ -85,7 +83,7 @@
                                     ?>
 
                                     <tr>
-                                        <th scope="row"><?php echo $mostrar['id'] ?></th>
+                                        <td scope="row"><?php echo $mostrar['id'] ?></td>
                                         <td><?php echo $mostrar['nombre'] ?></td>
                                         <td><?php echo $mostrar['user'] ?></td>
                                         <td><?php echo $mostrar['password'] ?></td>
@@ -98,7 +96,7 @@
                                     }
                                     ?>
                                     <tr>
-                                        <th scope="row">x</th>
+                                        <td scope="row">x</td>
                                         <td>a</td>
                                         <td>b</td>
                                         <td>c</td>
@@ -106,6 +104,7 @@
                                         <td>e</td> <!--Modificar al archivo que modifica-->
                                         <td>f</td> <!--Eliminar registro-->
                                     </tr>
+                                    
                                 </tbody>
                             </table>
                         </div>
