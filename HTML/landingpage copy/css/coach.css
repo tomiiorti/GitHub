@@ -26,16 +26,22 @@ li .nav-link {
     
 }
 tr:nth-child(even) {
-    background-color: #f2f2f2;
+    background-color: lightgray; /* Cambia el color de fondo de las filas pares */
+}
+
+tr:nth-child(odd) {
+    background-color: lightblue; /* Cambia el color de fondo de las filas impares */
 }
 .table {
     width: 100%;
     border-collapse: collapse;
+    background-color: lightblue;
 }
 
 /* Estilo para las celdas de encabezado */
 th {
-    background-color: #f2f2f2;
+    background-color: darkblue; /* Cambia el color de fondo de las celdas de encabezado */
+    color: white;
     text-align: left;
     padding: 10px;
 }
