@@ -22,16 +22,16 @@
                 <div class="bg-dark d-flex flex-column  p-3" style="height: 100vh;width:40vh;">
                     <ul class="nav flex-column" id="myTab" role="tablist">
                         <li class="nav-item" role="presentation">
-                            <a class="nav-link active text-white-50 fs-2" id="user-tab" data-bs-toggle="tab" href="#user" role="tab" aria-controls="user" aria-selected="true">Usuarios</a>
+                            <a class="nav-link active text-white-50 fs-2 p-3" id="user-tab" data-bs-toggle="tab" href="#user" role="tab" aria-controls="user" aria-selected="true">Usuarios</a>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <a class="nav-link text-white-50 fs-2" id="routine-tab" data-bs-toggle="tab" href="#routine" role="tab" aria-controls="routine" aria-selected="false">Rutinas</a>
+                            <a class="nav-link text-white-50 fs-2 p-3" id="routine-tab" data-bs-toggle="tab" href="#routine" role="tab" aria-controls="routine" aria-selected="false">Rutinas</a>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <a class="nav-link text-white-50 fs-2" id="exercise-tab" data-bs-toggle="tab" href="#exercise" role="tab" aria-controls="exercise" aria-selected="false">Ejercicios</a>
+                            <a class="nav-link text-white-50 fs-2 p-3" id="exercise-tab" data-bs-toggle="tab" href="#exercise" role="tab" aria-controls="exercise" aria-selected="false">Ejercicios</a>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <a class="nav-link text-white-50 fs-2" id="myroutine-tab" href="#">Mi Rutina</a> <!-- cambiar el href por la pagina "cliente.html" para que pueda ver su rutina propia-->
+                            <a class="nav-link text-white-50 fs-2 p-3" id="myroutine-tab" href="#">Mi Rutina</a> <!-- cambiar el href por la pagina "cliente.html" para que pueda ver su rutina propia-->
                         </li>
                     </ul>
                 </div>
@@ -63,7 +63,7 @@
                             </div>
                             <div class="col-md-12">
                                 <table class="table-bordered" style="width:100%;">
-                                    <tr class="text-center fs-4">
+                                    <tr class="text-center fs-5">
                                         <th scope="col" class="col-md-1">Número</th>
                                         <th scope="col" class="col-md-2">Nombre</th>
                                         <th scope="col" class="col-md-2">Usuario</th>
@@ -72,7 +72,7 @@
                                         <th scope="col" class="col-md-1">Modificar</th>
                                         <th scope="col" class="col-md-1">Eliminar</th>
                                     </tr>
-                                <tbody class="fs-3">
+                                <tbody class="">
                                     
                                     <?php
                                     $sql="SELECT * from t_persona";
