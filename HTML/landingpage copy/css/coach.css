@@ -1,5 +1,5 @@
 .body {
-    background-image: linear-gradient(to right, rgb(94, 94, 94), rgb(185, 185, 185));
+    background-color: grey;
 
 }
 
@@ -53,4 +53,20 @@ td {
     padding: 8px;
     text-align: center;
     justify-content: center;
+}
+#editUserForm .mb-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mb-3 .form-label{
+    margin-right: 2rem;
+    margin-left: 2rem;
+    display: flex;
+    align-items: center;
+}
+input.form-control {
+    border: 2px solid #8a8a8a; /* Borde con un color destacado */
+    padding: 8px; /* Espaciado interior */
+    border-radius: 5px; /* Bordes redondeados */
 }
