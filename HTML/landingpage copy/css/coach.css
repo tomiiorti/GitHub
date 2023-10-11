@@ -73,7 +73,6 @@ input.form-control {
 .icon-button {
     background: none;
     border: none;
-    color: #000000; /* Color deseado para el icono */
     font-size: 1.5rem; /* Tamaño del icono */
     cursor: pointer;
     transition: color 0.3s;
@@ -83,10 +82,11 @@ input.form-control {
 #btn-abrir-modal:hover {
     color: #0056b3; /* Cambia el color cuando el botón está en hover */
 }
-#btn-del{
-    color: rgb(99, 0, 0);
-    transition: color 0.3s;
-}
+
 #btn-del:hover{
-    color: black;
+    color: rgb(182, 0, 0);
+}
+
+#btn-routine:hover{
+    color: rgb(75, 75, 75);
 }
