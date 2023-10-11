@@ -28,9 +28,6 @@
                         <li class="nav-item" role="presentation">
                             <a class="nav-link text-white-50 fs-2 p-3" id="exercise-tab" data-bs-toggle="tab" href="#exercise" role="tab" aria-controls="exercise" aria-selected="false">Ejercicios</a>
                         </li>
-                        <li class="nav-item" role="presentation">
-                            <a class="nav-link text-white-50 fs-2 p-3" id="myroutine-tab" href="#">Mi Rutina</a> <!-- cambiar el href por la pagina "cliente.html" para que pueda ver su rutina propia-->
-                        </li>
                     </ul>
                 </div>
             </div>
@@ -54,10 +51,10 @@
                                 <div class="exercise-search col-md-2">
                                     <input type="text" class="form-control" placeholder="Buscar usuario">
                                 </div>
-                                <div class="mx-3 d-flex justify-content-end">
+                                <button class="btn-search-user mx-3" id="searchButton"><i class="fa-solid fa-magnifying-glass"></i></button>
+                                <div class="px-3 d-flex justify-content-end" style="border-left: 1px solid #ccc;">
                                     <a href="" class="btn btn-success border d-flex align-items-center">Nuevo Usuario</a><!-- href al codigo para crear-->
                                 </div>
-                                
                             </div>
                             <div class="col-md-12" style="border-top: 1px solid #ccc;">
                                 <table class="" style="width:100%;">
@@ -340,7 +337,30 @@
             });
         });
     </script>
-    Este código cambiará la imagen del botón entre "mostrar.png" y "ocultar.png" cada vez que se haga clic y ocultará o mostrará la contraseña en consecuencia. Asegúrate de que las rutas de las imágenes coincidan con la ubicación de tus archivos de imágenes.
+    <!--
+        Buscador de usuarios:
+    <script>
+        document.getElementById('searchButton').addEventListener('click', function() {
+            const searchInput = document.getElementById('searchInput');
+            const searchTerm = searchInput.value.trim().toLowerCase();
+            
+            // Aquí puedes realizar la lógica de búsqueda utilizando 'searchTerm'
+            // Por ejemplo, puedes filtrar la tabla para mostrar solo los resultados coincidentes.
+    
+            // Ejemplo: Filtrar los resultados en la tabla
+            const rows = document.querySelectorAll('tbody tr');
+            rows.forEach(row => {
+                const rowData = row.textContent.toLowerCase();
+                if (rowData.includes(searchTerm)) {
+                    row.style.display = 'table-row';
+                } else {
+                    row.style.display = 'none';
+                }
+            });
+        });
+    </script>
+    -->
+    
     
     
     
