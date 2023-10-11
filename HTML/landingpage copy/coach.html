@@ -48,9 +48,9 @@
                 <div class="tab-pane fade show active" id="user" role="tabpanel" aria-labelledby="user-tab">
                     <!-- Contenido del Día 2 (ejercicios) aquí -->
                     <section>
-                        <div class="">
+                        <div class="" >
                             <h4>Tabla de Usuarios</h4>
-                            <div class="d-flex jusitfy-content-center my-4">
+                            <div class="d-flex jusitfy-content-center my-4"> 
                                 <div class="exercise-search col-md-2">
                                     <input type="text" class="form-control" placeholder="Buscar usuario">
                                 </div>
@@ -59,19 +59,16 @@
                                 </div>
                                 
                             </div>
-                            <div class="col-md-12">
-                                <table class="table-bordered" style="width:100%;">
-                                    <tr class="text-center fs-5">
+                            <div class="col-md-12" style="border-top: 1px solid #ccc;">
+                                <table class="" style="width:100%;">
+                                    <tr class="text-center">
                                         <th scope="col" class="col-md-1">Número</th>
                                         <th scope="col" class="col-md-2">Nombre</th>
                                         <th scope="col" class="col-md-2">Usuario</th>
                                         <th scope="col" class="col-md-2">Contraseña</th>
                                         <th scope="col" class="col-md-2">Tipo</th>
-                                        <th scope="col" class="col-md-1">Modificar</th>
-                                        <th scope="col" class="col-md-1">Rutina</th>
-                                        <th scope="col" class="col-md-1">Eliminar</th>
                                     </tr>
-                                <tbody class="">
+                                <tbody class="table-bordered">
                                     <!--
                                     <?php
                                     $sql="SELECT * from t_persona";
@@ -96,155 +93,173 @@
                                     ?>
                                     -->
                                     <tr>
-                                        <td scope="row">N</td>
-                                        <td>n</td>
-                                        <td>u</td>
-                                        <td>c</td>
+                                        <td scope="row">1</td>
+                                        <td>Laura Smith</td>
+                                        <td>laursasmith</td>
+                                        <td>
+                                            <span class="password">******</span>
+                                            <button class="show-password-button" data-password="coca123"><i class="fa-solid fa-unlock"></i></button>
+                                        </td>
                                         <td>t</td>
                                         <td><button id="btn-abrir-modal" class="icon-button" data-toggle="modal" data-target="#editarUsuarioModal"><i class="fa-regular fa-pen-to-square"></i></button></td> <!--Boton Modificar al archivo que modifica-->
                                         <td><button id="btn-routine" class="icon-button" data-toggle="modal" data-target="#editarUsuarioModal"><i class="fa-solid fa-person-running"></i></button></td> <!--Boton Modificar Rutina-->
                                         <td><button id="btn-del" class="icon-button" data-toggle="modal" data-target="#editarUsuarioModal"><i class="fa-solid fa-trash"></i></button></td> <!--Boton Eliminar Registro-->
                                     </tr> 
                                     <tr>
-                                        <td scope="row">N</td>
-                                        <td>n</td>
-                                        <td>u</td>
-                                        <td>c</td>
+                                        <td scope="row">2</td>
+                                        <td>Martin Palermo</td>
+                                        <td>palermom</td>
+                                        <td>bocaaa</td>
                                         <td>t</td>
                                         <td><button id="btn-abrir-modal" class="icon-button" data-toggle="modal" data-target="#editarUsuarioModal"><i class="fa-regular fa-pen-to-square"></i></button></td> <!--Boton Modificar al archivo que modifica-->
                                         <td><button id="btn-routine" class="icon-button" data-toggle="modal" data-target="#editarUsuarioModal"><i class="fa-solid fa-person-running"></i></button></td> <!--Boton Modificar Rutina-->
                                         <td><button id="btn-del" class="icon-button" data-toggle="modal" data-target="#editarUsuarioModal"><i class="fa-solid fa-trash"></i></button></td> <!--Boton Eliminar Registro-->
                                     </tr> 
                                     <tr>
-                                        <td scope="row">N</td>
-                                        <td>n</td>
-                                        <td>u</td>
-                                        <td>c</td>
+                                        <td scope="row">3</td>
+                                        <td>Schiavi Lautaro</td>
+                                        <td>eltaladro</td>
+                                        <td>bocaelmejor</td>
                                         <td>t</td>
                                         <td><button id="btn-abrir-modal" class="icon-button" data-toggle="modal" data-target="#editarUsuarioModal"><i class="fa-regular fa-pen-to-square"></i></button></td> <!--Boton Modificar al archivo que modifica-->
                                         <td><button id="btn-routine" class="icon-button" data-toggle="modal" data-target="#editarUsuarioModal"><i class="fa-solid fa-person-running"></i></button></td> <!--Boton Modificar Rutina-->
                                         <td><button id="btn-del" class="icon-button" data-toggle="modal" data-target="#editarUsuarioModal"><i class="fa-solid fa-trash"></i></button></td> <!--Boton Eliminar Registro-->
                                     </tr> 
                                     <tr>
-                                        <td scope="row">N</td>
-                                        <td>n</td>
-                                        <td>u</td>
-                                        <td>c</td>
+                                        <td scope="row">4</td>
+                                        <td>Tony Stark</td>
+                                        <td>ironman</td>
+                                        <td>jesusamor</td>
                                         <td>t</td>
                                         <td><button id="btn-abrir-modal" class="icon-button" data-toggle="modal" data-target="#editarUsuarioModal"><i class="fa-regular fa-pen-to-square"></i></button></td> <!--Boton Modificar al archivo que modifica-->
                                         <td><button id="btn-routine" class="icon-button" data-toggle="modal" data-target="#editarUsuarioModal"><i class="fa-solid fa-person-running"></i></button></td> <!--Boton Modificar Rutina-->
                                         <td><button id="btn-del" class="icon-button" data-toggle="modal" data-target="#editarUsuarioModal"><i class="fa-solid fa-trash"></i></button></td> <!--Boton Eliminar Registro-->
                                     </tr> 
                                     <tr>
-                                        <td scope="row">N</td>
-                                        <td>n</td>
-                                        <td>u</td>
-                                        <td>c</td>
+                                        <td scope="row">1</td>
+                                        <td>Laura Smith</td>
+                                        <td>laursasmith</td>
+                                        <td>coca123</td>
                                         <td>t</td>
                                         <td><button id="btn-abrir-modal" class="icon-button" data-toggle="modal" data-target="#editarUsuarioModal"><i class="fa-regular fa-pen-to-square"></i></button></td> <!--Boton Modificar al archivo que modifica-->
                                         <td><button id="btn-routine" class="icon-button" data-toggle="modal" data-target="#editarUsuarioModal"><i class="fa-solid fa-person-running"></i></button></td> <!--Boton Modificar Rutina-->
                                         <td><button id="btn-del" class="icon-button" data-toggle="modal" data-target="#editarUsuarioModal"><i class="fa-solid fa-trash"></i></button></td> <!--Boton Eliminar Registro-->
                                     </tr> 
                                     <tr>
-                                        <td scope="row">N</td>
-                                        <td>n</td>
-                                        <td>u</td>
-                                        <td>c</td>
+                                        <td scope="row">2</td>
+                                        <td>Martin Palermo</td>
+                                        <td>palermom</td>
+                                        <td>bocaaa</td>
                                         <td>t</td>
                                         <td><button id="btn-abrir-modal" class="icon-button" data-toggle="modal" data-target="#editarUsuarioModal"><i class="fa-regular fa-pen-to-square"></i></button></td> <!--Boton Modificar al archivo que modifica-->
                                         <td><button id="btn-routine" class="icon-button" data-toggle="modal" data-target="#editarUsuarioModal"><i class="fa-solid fa-person-running"></i></button></td> <!--Boton Modificar Rutina-->
                                         <td><button id="btn-del" class="icon-button" data-toggle="modal" data-target="#editarUsuarioModal"><i class="fa-solid fa-trash"></i></button></td> <!--Boton Eliminar Registro-->
                                     </tr> 
                                     <tr>
-                                        <td scope="row">N</td>
-                                        <td>n</td>
-                                        <td>u</td>
-                                        <td>c</td>
-                                        <td>t</td>
-                                        <td><button id="btn-abrir-modal" class="icon-button" data-toggle="modal" data-target="#editarUsuarioModal"><i class="fa-regular fa-pen-to-square"></i></button></td> <!--Boton Modificar al archivo que modifica-->
-                                        <td><button id="btn-routine" class="icon-button" data-toggle="modal" data-target="#editarUsuarioModal"><i class="fa-solid fa-person-running"></i></button></td> <!--Boton Modificar Rutina-->
-                                        <td><button id="btn-del" class="icon-button" data-toggle="modal" data-target="#editarUsuarioModal"><i class="fa-solid fa-trash"></i></button></td> <!--Boton Eliminar Registro-->
-                                    </tr> <tr>
-                                        <td scope="row">N</td>
-                                        <td>n</td>
-                                        <td>u</td>
-                                        <td>c</td>
-                                        <td>t</td>
-                                        <td><button id="btn-abrir-modal" class="icon-button" data-toggle="modal" data-target="#editarUsuarioModal"><i class="fa-regular fa-pen-to-square"></i></button></td> <!--Boton Modificar al archivo que modifica-->
-                                        <td><button id="btn-routine" class="icon-button" data-toggle="modal" data-target="#editarUsuarioModal"><i class="fa-solid fa-person-running"></i></button></td> <!--Boton Modificar Rutina-->
-                                        <td><button id="btn-del" class="icon-button" data-toggle="modal" data-target="#editarUsuarioModal"><i class="fa-solid fa-trash"></i></button></td> <!--Boton Eliminar Registro-->
-                                    </tr> <tr>
-                                        <td scope="row">N</td>
-                                        <td>n</td>
-                                        <td>u</td>
-                                        <td>c</td>
-                                        <td>t</td>
-                                        <td><button id="btn-abrir-modal" class="icon-button" data-toggle="modal" data-target="#editarUsuarioModal"><i class="fa-regular fa-pen-to-square"></i></button></td> <!--Boton Modificar al archivo que modifica-->
-                                        <td><button id="btn-routine" class="icon-button" data-toggle="modal" data-target="#editarUsuarioModal"><i class="fa-solid fa-person-running"></i></button></td> <!--Boton Modificar Rutina-->
-                                        <td><button id="btn-del" class="icon-button" data-toggle="modal" data-target="#editarUsuarioModal"><i class="fa-solid fa-trash"></i></button></td> <!--Boton Eliminar Registro-->
-                                    </tr> <tr>
-                                        <td scope="row">N</td>
-                                        <td>n</td>
-                                        <td>u</td>
-                                        <td>c</td>
+                                        <td scope="row">3</td>
+                                        <td>Schiavi Lautaro</td>
+                                        <td>eltaladro</td>
+                                        <td>bocaelmejor</td>
                                         <td>t</td>
                                         <td><button id="btn-abrir-modal" class="icon-button" data-toggle="modal" data-target="#editarUsuarioModal"><i class="fa-regular fa-pen-to-square"></i></button></td> <!--Boton Modificar al archivo que modifica-->
                                         <td><button id="btn-routine" class="icon-button" data-toggle="modal" data-target="#editarUsuarioModal"><i class="fa-solid fa-person-running"></i></button></td> <!--Boton Modificar Rutina-->
                                         <td><button id="btn-del" class="icon-button" data-toggle="modal" data-target="#editarUsuarioModal"><i class="fa-solid fa-trash"></i></button></td> <!--Boton Eliminar Registro-->
                                     </tr> 
+                                    <tr>
+                                        <td scope="row">4</td>
+                                        <td>Tony Stark</td>
+                                        <td>ironman</td>
+                                        <td>jesusamor</td>
+                                        <td>t</td>
+                                        <td><button id="btn-abrir-modal" class="icon-button" data-toggle="modal" data-target="#editarUsuarioModal"><i class="fa-regular fa-pen-to-square"></i></button></td> <!--Boton Modificar al archivo que modifica-->
+                                        <td><button id="btn-routine" class="icon-button" data-toggle="modal" data-target="#editarUsuarioModal"><i class="fa-solid fa-person-running"></i></button></td> <!--Boton Modificar Rutina-->
+                                        <td><button id="btn-del" class="icon-button" data-toggle="modal" data-target="#editarUsuarioModal"><i class="fa-solid fa-trash"></i></button></td> <!--Boton Eliminar Registro-->
+                                    </tr> 
+                                    <tr>
+                                        <td scope="row">1</td>
+                                        <td>Laura Smith</td>
+                                        <td>laursasmith</td>
+                                        <td>coca123</td>
+                                        <td>t</td>
+                                        <td><button id="btn-abrir-modal" class="icon-button" data-toggle="modal" data-target="#editarUsuarioModal"><i class="fa-regular fa-pen-to-square"></i></button></td> <!--Boton Modificar al archivo que modifica-->
+                                        <td><button id="btn-routine" class="icon-button" data-toggle="modal" data-target="#editarUsuarioModal"><i class="fa-solid fa-person-running"></i></button></td> <!--Boton Modificar Rutina-->
+                                        <td><button id="btn-del" class="icon-button" data-toggle="modal" data-target="#editarUsuarioModal"><i class="fa-solid fa-trash"></i></button></td> <!--Boton Eliminar Registro-->
+                                    </tr> 
+                                    <tr>
+                                        <td scope="row">2</td>
+                                        <td>Martin Palermo</td>
+                                        <td>palermom</td>
+                                        <td>bocaaa</td>
+                                        <td>t</td>
+                                        <td><button id="btn-abrir-modal" class="icon-button" data-toggle="modal" data-target="#editarUsuarioModal"><i class="fa-regular fa-pen-to-square"></i></button></td> <!--Boton Modificar al archivo que modifica-->
+                                        <td><button id="btn-routine" class="icon-button" data-toggle="modal" data-target="#editarUsuarioModal"><i class="fa-solid fa-person-running"></i></button></td> <!--Boton Modificar Rutina-->
+                                        <td><button id="btn-del" class="icon-button" data-toggle="modal" data-target="#editarUsuarioModal"><i class="fa-solid fa-trash"></i></button></td> <!--Boton Eliminar Registro-->
+                                    </tr> 
+                                    <tr>
+                                        <td scope="row">3</td>
+                                        <td>Schiavi Lautaro</td>
+                                        <td>eltaladro</td>
+                                        <td>bocaelmejor</td>
+                                        <td>t</td>
+                                        <td><button id="btn-abrir-modal" class="icon-button" data-toggle="modal" data-target="#editarUsuarioModal"><i class="fa-regular fa-pen-to-square"></i></button></td> <!--Boton Modificar al archivo que modifica-->
+                                        <td><button id="btn-routine" class="icon-button" data-toggle="modal" data-target="#editarUsuarioModal"><i class="fa-solid fa-person-running"></i></button></td> <!--Boton Modificar Rutina-->
+                                        <td><button id="btn-del" class="icon-button" data-toggle="modal" data-target="#editarUsuarioModal"><i class="fa-solid fa-trash"></i></button></td> <!--Boton Eliminar Registro-->
+                                    </tr> 
+                                    <tr>
+                                        <td scope="row">4</td>
+                                        <td>Tony Stark</td>
+                                        <td>ironman</td>
+                                        <td>jesusamor</td>
+                                        <td>t</td>
+                                        <td><button id="btn-abrir-modal" class="icon-button" data-toggle="modal" data-target="#editarUsuarioModal"><i class="fa-regular fa-pen-to-square"></i></button></td> <!--Boton Modificar al archivo que modifica-->
+                                        <td><button id="btn-routine" class="icon-button" data-toggle="modal" data-target="#editarUsuarioModal"><i class="fa-solid fa-person-running"></i></button></td> <!--Boton Modificar Rutina-->
+                                        <td><button id="btn-del" class="icon-button" data-toggle="modal" data-target="#editarUsuarioModal"><i class="fa-solid fa-trash"></i></button></td> <!--Boton Eliminar Registro-->
+                                    </tr> 
+                                     
                                 </tbody>
-                            </table>
-                            <dialog id="modal" class="col-md-4">
-                                <h2 class="text-center mb-3">Editar Usuario</h2>
-                                <form id="editUserForm">
-                                    <div class="mb-3">
-                                        <label for="nombre" class="form-label col-md-2">Nombre</label>
-                                        <input type="text" class="form-control" id="nombre" name="nombre">
-                                    </div>
-                                    <hr> <!-- Línea divisora -->
-                                    <div class="mb-3">
-                                        <label for="apellido" class="form-label col-md-2">Apellido</label>
-                                        <input type="text" class="form-control" id="apellido" name="apellido">
-                                    </div>
-                                    <hr> <!-- Línea divisora -->
-                                    <div class="mb-3">
-                                        <label for="usuario" class="form-label col-md-2">Usuario</label>
-                                        <input type="text" class="form-control" id="usuario" name="usuario">
-                                    </div>
-                                    <hr> <!-- Línea divisora -->
-                                    <div class="mb-3">
-                                        <label for="contrasena" class="form-label col-md-2">Contraseña</label>
-                                        <input type="password" class="form-control" id="contrasena" name="contrasena">
-                                    </div>
-                                    <hr> <!-- Línea divisora -->
-                                    <div class="mb-3">
-                                        <label for="id" class="form-label col-md-2">ID</label>
-                                        <input type="text" class="form-control" id="id" name="id" readonly>
-                                    </div>
-                                    <hr> <!-- Línea divisora -->
-                                    <div class="mb-3">
-                                        <label for="rol" class="form-label col-md-2">Rol (0-1)</label>
-                                        <input type="number" class="form-control" id="rol" name="rol" min="0" max="1">
-                                    </div>
-                                    <hr> <!-- Línea divisora -->
-                                    <div class="mx-3 d-flex justify-content-between align-items-center">
-                                        <button type="button" class="btn btn-danger" id="btn-cerrar-modal">Cerrar</button>
-                                        <button type="button" class="btn btn-primary" id="guardarCambios">Guardar Cambios</button>
-
-                                    </div>
-                                    
-                                </form>
-                                
-                            </dialog>
-                            
-                            
+                                </table>
+                                <dialog id="modal" class="col-md-4">
+                                    <h2 class="text-center mb-3">Editar Usuario</h2>
+                                    <form id="editUserForm">
+                                        <div class="mb-3">
+                                            <label for="nombre" class="form-label col-md-2">Nombre</label>
+                                            <input type="text" class="form-control" id="nombre" name="nombre">
+                                        </div>
+                                        <hr> <!-- Línea divisora -->
+                                        <div class="mb-3">
+                                            <label for="apellido" class="form-label col-md-2">Apellido</label>
+                                            <input type="text" class="form-control" id="apellido" name="apellido">
+                                        </div>
+                                        <hr> <!-- Línea divisora -->
+                                        <div class="mb-3">
+                                            <label for="usuario" class="form-label col-md-2">Usuario</label>
+                                            <input type="text" class="form-control" id="usuario" name="usuario">
+                                        </div>
+                                        <hr> <!-- Línea divisora -->
+                                        <div class="mb-3">
+                                            <label for="contrasena" class="form-label col-md-2">Contraseña</label>
+                                            <input type="password" class="form-control" id="contrasena" name="contrasena">
+                                        </div>
+                                        <hr> <!-- Línea divisora -->
+                                        <div class="mb-3">
+                                            <label for="id" class="form-label col-md-2">ID</label>
+                                            <input type="text" class="form-control" id="id" name="id" readonly>
+                                        </div>
+                                        <hr> <!-- Línea divisora -->
+                                        <div class="mb-3">
+                                            <label for="rol" class="form-label col-md-2">Rol (0-1)</label>
+                                            <input type="number" class="form-control" id="rol" name="rol" min="0" max="1">
+                                        </div>
+                                        <hr> <!-- Línea divisora -->
+                                        <div class="mx-3 d-flex justify-content-between align-items-center">
+                                            <button type="button" class="btn btn-danger" id="btn-cerrar-modal">Cerrar</button>
+                                            <button type="button" class="btn btn-primary" id="guardarCambios">Guardar Cambios</button>
+                                        </div>
+                                    </form>
+                                </dialog>
+                            </div>
                         </div>
                     </section>
-                </div>
-                <div class="tab-pane fade" id="routine" role="tabpanel" aria-labelledby="routine-tab">
-                    <!-- Contenido del Día 2 (ejercicios) aquí -->
-                    <h2>Rutinas</h2>
-                    <p>Aquí puedes describir los ejercicios para el Día 3.</p>
                 </div>
                 <div class="tab-pane fade d-flex flex-column mb-3 justify-content-center" id="exercise" role="tabpanel" aria-labelledby="exercise-tab">
                     <!-- Contenido del Día 2 (ejercicios) aquí -->
@@ -262,7 +277,7 @@
                                     <p>Levanta mancuernas pa3</p>
                                 </div>
                                 <div>
-                                    <div class="img">
+                                    <div class="img text-center">
                                         <img src="./img/descarga.jpeg" alt="" class="img-fluid">
                                     </div>
                                     <div class="text-center">
@@ -302,6 +317,36 @@
             modal.close();
         })
     </script>
+    <script>
+        const showPasswordButtons = document.querySelectorAll('.show-password-button');
+        
+        showPasswordButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                const passwordField = button.previousElementSibling;
+                const showImage = button.querySelector('.show-image');
+                const hideImage = button.querySelector('.hide-image');
+                if (passwordField.classList.contains('visible')) {
+                    passwordField.textContent = '******';
+                    passwordField.classList.remove('visible');
+                    showImage.style.display = 'block';
+                    hideImage.style.display = 'none';
+                } else {
+                    const password = button.getAttribute('data-password');
+                    passwordField.textContent = password;
+                    passwordField.classList.add('visible');
+                    showImage.style.display = 'none';
+                    hideImage.style.display = 'block';
+                }
+            });
+        });
+    </script>
+    Este código cambiará la imagen del botón entre "mostrar.png" y "ocultar.png" cada vez que se haga clic y ocultará o mostrará la contraseña en consecuencia. Asegúrate de que las rutas de las imágenes coincidan con la ubicación de tus archivos de imágenes.
+    
+    
+    
+    
+    
+    
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
