@@ -13,27 +13,28 @@
     <header>
         <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
           <div class="container-fluid">
+            <a class="tittle navbar-brand mx-3" href="#">Gimnasio</a>
             <button class="navbar-toggler mx-3" id="ajusteBtn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                 <div id="ajustesDiv" class="ajustes">
                     <i class="fa-solid fa-magnifying-glass" style="color: white;"></i>
                 </div>
             </button>
-            <a class="tittle navbar-brand " href="#">Gimnasio</a>
-            <div class="offcanvas offcanvas-end " tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" style="width:40vh;"> <!--Modificar estos dos width si lo soluciono con java-->
-                <div class="bg-dark d-flex flex-column  p-3" style="height: 100vh;width:40vh;">
+            <div class="offcanvas offcanvas-end " tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" style="width: 40vh;">
+                <div class="bg-dark d-flex flex-column p-3" style="height: 100vh; width: 40vh;">
                     <ul class="nav flex-column" id="myTab" role="tablist">
                         <li class="nav-item" role="presentation">
                             <a class="nav-link active text-white-50 fs-2 p-3" id="user-tab" data-bs-toggle="tab" href="#user" role="tab" aria-controls="user" aria-selected="true">Usuarios</a>
                         </li>
-                        <li class="nav-item" role="presentation">
+                        <li class="nav-item" role-presentation>
                             <a class="nav-link text-white-50 fs-2 p-3" id="exercise-tab" data-bs-toggle="tab" href="#exercise" role="tab" aria-controls="exercise" aria-selected="false">Ejercicios</a>
                         </li>
                     </ul>
                 </div>
+                <div class="m-4 d-flex justify-content-center">
+                    <a href="cerrar_sesion.py" class="btn btn-danger" style="width:90%;">Cerrar Sesión</a>
+                </div>
             </div>
-            <div class="m-4 d-flex justify-content-end">
-                <a href="cerrar_sesion.py" class="btn btn-secondary">Cerrar Sesión</a>
-            </div>
+            
           </div>
         </nav>
     </header>
@@ -64,7 +65,7 @@
                                         <th scope="col" class="col-md-2">Usuario</th>
                                         <th scope="col" class="col-md-2">Contraseña</th>
                                         <th scope="col" class="col-md-2">Tipo</th>
-                                        <th class="cont">d</th>
+                                        <th class="cont"></th>
                                         <th class="cont"></th>
                                         <th class="cont"></th>
                                     </tr>

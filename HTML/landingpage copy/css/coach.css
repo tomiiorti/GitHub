@@ -111,3 +111,10 @@ table.table th, table.table td {
 .cont{
     width: 2%;
 }
+.ajustes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2rem;
+    width: 2rem;
+}
