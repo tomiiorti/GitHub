@@ -111,7 +111,7 @@ table.table th, table.table td {
 .cont{
     width: 2%;
 }
-.ajustes{
+#ajusteBtn{
     display: flex;
     justify-content: center;
     align-items: center;
