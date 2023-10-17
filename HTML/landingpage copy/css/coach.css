@@ -118,3 +118,11 @@ table.table th, table.table td {
     height: 2rem;
     width: 2rem;
 }
+#modal::backdrop{
+    background-color: rgba(0, 0, 0, 0.658);
+}
+#editEjercicioForm .mb-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
