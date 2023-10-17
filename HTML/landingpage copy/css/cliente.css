@@ -6,9 +6,6 @@
     height: 8vh;
     
 }
-.bg{
-
-}
 .bgi{
     background: none;
     border: none;
@@ -20,6 +17,6 @@
     transition: transform 0.3s, background-color 0.3s;
 }
 .bgi:hover{
-    background-color: rgb(66, 66, 66);
+    background-color: rgba(10, 117, 0, 0.685);
     transform: scale(1.05)
 }
