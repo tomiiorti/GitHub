@@ -126,3 +126,6 @@ table.table th, table.table td {
     justify-content: center;
     align-items: center;
 }
+#modalEjercicio{
+    border-radius: 1rem;
+}
