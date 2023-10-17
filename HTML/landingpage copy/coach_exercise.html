@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/coach.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <title>Administrador</title>
+</head>
+<body class="body">
+    <header>
+        <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+          <div class="container-fluid">
+            <a class="tittle navbar-brand mx-3" href="#">Gimnasio</a>
+            <button class="navbar-toggler mx-3" id="ajusteBtn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <div id="ajustesDiv" class="ajustes d-flex align-items-center justify-content-center">
+                    <i class="fa-solid fa-magnifying-glass" style="color: white;"></i>
+                </div>
+            </button>
+            <div class="offcanvas offcanvas-end " tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" style="width: 40vh;">
+                <div class="bg-dark d-flex flex-column p-3" style="height: 100vh; width: 40vh;">
+                    <ul class="nav flex-column" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link active text-white-50 fs-2 p-3" id="user-tab" data-bs-toggle="tab" href="./coach_user.html" role="tab" aria-controls="user" aria-selected="true">Usuarios</a>
+                        </li>
+                        <li class="nav-item" role-presentation>
+                            <a class="nav-link text-white-50 fs-2 p-3" id="exercise-tab" data-bs-toggle="tab" href="#exercise" role="tab" aria-controls="exercise" aria-selected="false">Ejercicios</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="m-4 d-flex justify-content-center">
+                    <a href="cerrar_sesion.py" class="btn btn-danger d-flex align-items-center justify-content-center" style="width:90%; height:3.2rem;">Cerrar Sesión</a>
+                </div>
+            </div>
+          </div>
+        </nav>
+    </header>
+      
+    <main>
+        <!--<div style="height:12vh"></div> -->
+        <div class="col-md-12">
+            <div class="tab-content m-4" id="myTabContent">
+                <div class="tab-pane fade show active d-flex flex-column mb-3 justify-content-center" id="exercise" role="tabpanel" aria-labelledby="exercise-tab">
+                    <!-- Contenido del Día 2 (ejercicios) aquí -->
+                    <h2>Ejercicios</h2>
+                    <!-- Agrega esta sección dentro de tu <main> -->
+                    <section class="exercise-section m-4">
+                        <!-- Buscador -->
+                        <div class="d-flex jusitfy-content-center my-4"> 
+                            <div class="exercise-search col-md-2">
+                                <input type="text" class="form-control" placeholder="Buscar ejercicio">
+                            </div>
+                            <button class="btn-search-user mx-3" id="searchButton"><i class="fa-solid fa-magnifying-glass"></i></button>
+                            <div class="px-3 d-flex justify-content-end" style="border-left: 1px solid #ccc;">
+                                <a href="#" class="btn btn-success border d-flex align-items-center">Nuevo Ejercicio</a><!-- href al codigo para crear-->
+                            </div>
+                        </div>
+                        <div class="ejercicios d-flex justify-content-center flex-wrap pb-4" style="border-bottom: 1px solid #ccc;">
+                            
+                            <div class="card m-2 col-md-2 custom-border-card" style="height: auto;">
+                                <div class="text-center p-1">
+                                    <p>Levanta mancuernas pa3</p>
+                                </div>
+                                <div>
+                                    <div class="img text-center">
+                                        <img src="./img/descarga.jpeg" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="text-center">
+                                        <p class="mb-2">3x12</p>
+                                        <p>Descripcion</p>
+                                        <button class="btn btn-primary rounded-pill m-2" id="btnModEjercicio" data-target="modalEjercicio"><i class="fa-regular fa-pen-to-square"></i></button><!-- Botón para Modificar -->
+                                        <button class="btn btn-danger rounded-pill m-2" id="btnDelEjercicio"><i class="fa-solid fa-trash"></i></button> <!-- Botón para Eliminar -->
+                                    </div>
+                                </div>
+                            </div>
+                            <dialog id="modalEjercicio" class="col-md-4">
+                                <h2 class="text-center mb-3">Editar Ejercicio</h2>
+                                <form id="editEjercicioForm">
+                                    <div class="mb-3">
+                                        <label for="nombreEjercicio" class="form-label col-md-2">Nombre</label>
+                                        <input type="text" class="form-control" id="nombreEjercicio" name="nombreEjercicio">
+                                    </div>
+                                    <hr> <!-- Línea divisora -->
+                                    <div class="mb-3">
+                                        <label for="imagenEjercicio" class="form-label col-md-2">Imagen (URL)</label>
+                                        <input type="text" class="form-control" id="imagenEjercicio" name="imagenEjercicio"> <!-- Tiene que subir archivos -->
+                                    </div>
+                                    <hr> <!-- Línea divisora -->
+                                    <div class="mb-3">
+                                        <label for="seriesEjercicio" class="form-label col-md-2">Series</label>
+                                        <input type="text" class="form-control" id="seriesEjercicio" name="seriesEjercicio"> <!-- Tiene que salir un cosito para elegir las series-->
+                                    </div>
+                                    <hr> <!-- Línea divisora -->
+                                    <div class="mb-3">
+                                        <label for="descripcionEjercicio" class="form-label col-md-2">Descripción</label>
+                                        <textarea class="form-control" id="descripcionEjercicio" name="descripcionEjercicio"></textarea>
+                                    </div>
+                                    <hr> <!-- Línea divisora -->
+                                    <div class="mx-3 d-flex justify-content-end align-items-center">
+                                        <button type="button" class="btn btn-primary mx-2" id="guardarCambiosEjercicio">Guardar Cambios</button>
+                                        <button type="button" class="btn btn-danger" id="btn-cerrar-modal-ejercicio">Cerrar</button>
+                                    </div>
+                                </form>
+                            </dialog>
+                            
+                            
+                            <!-- hacer el loop como en el de usuarios para mostrar todos los ejercicios-->
+                        </div>
+                    
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Aca es la conexion de la base de datos con esto
+    <?php
+        $conexion=mysqli_connect('localhost','root','', 'pruebas');
+    ?>
+    -->
+    <script>
+        // Obtén el botón "Modificar Rutina" por su ID
+        const btnModificarRutina = document.getElementById("btn-routine");
+    
+        // Agrega un evento click al botón
+        btnModificarRutina.addEventListener("click", () => {
+            // Redirige al usuario a la página coach_rutina.html
+            window.location.href = "coach_rutina.html";
+        });
+    </script>
+    
+    <script>
+        const btnAbrirModalEjercicio = 
+        document.querySelector("#btnModEjercicio");
+        const btnCerrarModalEjercicio = 
+        document.querySelector("#btn-cerrar-modal-ejercicio");
+        const modalEjercicio = 
+        document.querySelector("#modalEjercicio");
+    
+        btnAbrirModalEjercicio.addEventListener("click", () => {
+            modalEjercicio.showModal();
+        });
+    
+        btnCerrarModalEjercicio.addEventListener("click", () => {
+            modalEjercicio.close();
+        });
+    </script>
+    
+    <script>
+        const btnAbrirModal = 
+        document.querySelector("#btn-abrir-modal");
+        const btnCerrarModal =
+        document.querySelector("#btn-cerrar-modal");
+        const modal =
+        document.querySelector("#modal");
+
+        btnAbrirModal.addEventListener("click",() =>{
+            modal.showModal();
+        })
+
+        btnCerrarModal.addEventListener("click", () =>{
+            modal.close();
+        })
+    </script>
+    <script>
+        const btnEliminarEjercicio = document.querySelector("#btnDelEjercicio");
+    
+        btnEliminarEjercicio.addEventListener("click", () => {
+            const confirmacion = window.confirm("¿Estás seguro de que deseas eliminar este ejercicio?");
+    
+            if (confirmacion) {
+                // Aquí colocarías el código para eliminar el ejercicio.
+                // Puedes usar una solicitud AJAX o la lógica necesaria para eliminar el elemento de tu base de datos o lista de ejercicios.
+            } else {
+                // El usuario ha cancelado la eliminación. No hagas nada.
+            }
+        });
+    </script>
+    <script>
+        const btnEliminarUsuario = document.querySelector("#btnDelUsuario");
+    
+        btnEliminarUsuario.addEventListener("click", () => {
+            const confirmacion = window.confirm("¿Estás seguro de que deseas eliminar este usuario?");
+    
+            if (confirmacion) {
+                // Aquí colocarías el código para eliminar el ejercicio.
+                // Puedes usar una solicitud AJAX o la lógica necesaria para eliminar el elemento de tu base de datos o lista de ejercicios.
+            } else {
+                // El usuario ha cancelado la eliminación. No hagas nada.
+            }
+        });
+    </script>
+    <script>
+        const showPasswordButtons = document.querySelectorAll('.show-password-button');
+        
+        showPasswordButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                const passwordField = button.previousElementSibling;
+                const showImage = button.querySelector('.show-image');
+                const hideImage = button.querySelector('.hide-image');
+                if (passwordField.classList.contains('visible')) {
+                    passwordField.textContent = '******';
+                    passwordField.classList.remove('visible');
+                    showImage.style.display = 'block';
+                    hideImage.style.display = 'none';
+                } else {
+                    const password = button.getAttribute('data-password');
+                    passwordField.textContent = password;
+                    passwordField.classList.add('visible');
+                    showImage.style.display = 'none';
+                    hideImage.style.display = 'block';
+                }
+            });
+        });
+    </script>
+    <!--
+        Buscador de usuarios:
+    <script>
+        document.getElementById('searchButton').addEventListener('click', function() {
+            const searchInput = document.getElementById('searchInput');
+            const searchTerm = searchInput.value.trim().toLowerCase();
+            
+            // Aquí puedes realizar la lógica de búsqueda utilizando 'searchTerm'
+            // Por ejemplo, puedes filtrar la tabla para mostrar solo los resultados coincidentes.
+    
+            // Ejemplo: Filtrar los resultados en la tabla
+            const rows = document.querySelectorAll('tbody tr');
+            rows.forEach(row => {
+                const rowData = row.textContent.toLowerCase();
+                if (rowData.includes(searchTerm)) {
+                    row.style.display = 'table-row';
+                } else {
+                    row.style.display = 'none';
+                }
+            });
+        });
+    </script>
+    -->
+    
+    
+    
+    
+    
+    
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+</html>
