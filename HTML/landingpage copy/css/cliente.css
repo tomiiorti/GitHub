@@ -1,8 +1,26 @@
 .body{
-    background-image: linear-gradient(to right, rgb(58, 87, 58), rgb(39, 58, 39));
+    background-color: grey;
 }
 .header{
     background-color: rgba(0, 0, 0, 0.308);
     height: 8vh;
     
+}
+.bg{
+
+}
+.bgi{
+    background: none;
+    border: none;
+    font-size: 1.5rem; /* Tamaño del icono */
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.39);
+    color: white;
+    border-radius: 1rem;
+    transition: background-color 0.3s;
+    transition: transform 0.3s;
+}
+.bgi:hover{
+    background-color: red;
+    transform: scale(1.1)
 }
