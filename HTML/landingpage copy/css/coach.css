@@ -83,7 +83,7 @@ input.form-control {
     color: #0056b3; /* Cambia el color cuando el botón está en hover */
 }
 
-#btn-del:hover{
+#btnDelUsuario:hover{
     color: rgb(182, 0, 0);
 }
 
