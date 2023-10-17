@@ -102,8 +102,8 @@
                                         </td>
                                         <td>t</td>
                                         <td><button id="btn-abrir-modal" class="icon-button" data-toggle="modal" data-target="#editarUsuarioModal"><i class="fa-regular fa-pen-to-square"></i></button></td> <!--Boton Modificar al archivo que modifica-->
-                                        <td><button id="btn-routine" class="icon-button" data-toggle="" data-target="#"><i class="fa-solid fa-person-running"></i></button></td> <!--Boton Modificar Rutina-->
-                                        <td><button id="btnDelUsuario" class="icon-button" data-toggle="" data-target="#"><i class="fa-solid fa-trash"></i></button></td> <!--Boton Eliminar Registro-->
+                                        <td><button id="btn-routine" class="icon-button"><i class="fa-solid fa-person-running"></i></button></td> <!--Boton Modificar Rutina-->
+                                        <td><button id="btnDelUsuario" class="icon-button"><i class="fa-solid fa-trash"></i></button></td> <!--Boton Eliminar Registro-->
                                     </tr> 
                                     
                                      
@@ -229,7 +229,17 @@
         $conexion=mysqli_connect('localhost','root','', 'pruebas');
     ?>
     -->
-
+    <script>
+        // Obtén el botón "Modificar Rutina" por su ID
+        const btnModificarRutina = document.getElementById("btn-routine");
+    
+        // Agrega un evento click al botón
+        btnModificarRutina.addEventListener("click", () => {
+            // Redirige al usuario a la página coach_rutina.html
+            window.location.href = "coach_rutina.html";
+        });
+    </script>
+    
     <script>
         const btnAbrirModalEjercicio = 
         document.querySelector("#btnModEjercicio");

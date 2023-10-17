@@ -17,10 +17,9 @@
     background-color: rgba(0, 0, 0, 0.39);
     color: white;
     border-radius: 1rem;
-    transition: background-color 0.3s;
-    transition: transform 0.3s;
+    transition: transform 0.3s, background-color 0.3s;
 }
 .bgi:hover{
-    background-color: red;
-    transform: scale(1.1)
+    background-color: rgb(66, 66, 66);
+    transform: scale(1.05)
 }
