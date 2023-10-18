@@ -39,11 +39,9 @@
     </header>
       
     <main>
-        <!--<div style="height:12vh"></div> -->
         <div class="col-md-12">
             <div class="tab-content m-4" id="myTabContent">
                 <div class="tab-pane fade show active" id="user" role="tabpanel" aria-labelledby="user-tab">
-                    <!-- Contenido del Día 2 (ejercicios) aquí -->
                     <section>
                         <div class="" >
                             <h4>Tabla de Usuarios</h4>
@@ -53,8 +51,47 @@
                                 </div>
                                 <button class="btn-search-user mx-3" id="searchButton"><i class="fa-solid fa-magnifying-glass"></i></button>
                                 <div class="px-3 d-flex justify-content-end" style="border-left: 1px solid #ccc;">
-                                    <a href="#" class="btn btn-success border d-flex align-items-center">Nuevo Usuario</a><!-- href al codigo para crear-->
+                                    <a href="#" id="abrir-dialogo" data-toggle="model" class="btn btn-success border d-flex align-items-center">Nuevo Usuario</a><!-- href al codigo para crear-->
                                 </div>
+                                <dialog id="model">
+                                    <h2 class="text-center mb-3">Crear Usuario</h2>
+                                    <form id="createUser">
+                                        <div class="mb-3">
+                                            <label for="nombre" class="form-label col-md-2">Nombre</label>
+                                            <input type="text" class="form-control" id="nombre" name="nombre">
+                                        </div>
+                                        <hr> <!-- Línea divisora -->
+                                        <div class="mb-3">
+                                            <label for="apellido" class="form-label col-md-2">Apellido</label>
+                                            <input type="text" class="form-control" id="apellido" name="apellido">
+                                        </div>
+                                        <hr> <!-- Línea divisora -->
+                                        <div class="mb-3">
+                                            <label for="usuario" class="form-label col-md-2">Usuario</label>
+                                            <input type="text" class="form-control" id="usuario" name="usuario">
+                                        </div>
+                                        <hr> <!-- Línea divisora -->
+                                        <div class="mb-3">
+                                            <label for="contrasena" class="form-label col-md-2">Contraseña</label>
+                                            <input type="password" class="form-control" id="contrasena" name="contrasena">
+                                        </div>
+                                        <hr> <!-- Línea divisora -->
+                                        <div class="mb-3">
+                                            <label for="id" class="form-label col-md-2">ID</label>
+                                            <input type="text" class="form-control" id="id" name="id" readonly>
+                                        </div>
+                                        <hr> <!-- Línea divisora -->
+                                        <div class="mb-3">
+                                            <label for="rol" class="form-label col-md-2">Rol (0-1)</label>
+                                            <input type="number" class="form-control" id="rol" name="rol" min="0" max="1">
+                                        </div>
+                                        <hr> <!-- Línea divisora -->
+                                        <div class="mx-3 d-flex justify-content-end align-items-center">
+                                            <button type="button" class="btn btn-primary mx-2" id="guardarCambios">Guardar Cambios</button>
+                                            <button type="button" class="btn btn-danger mx-2" id="cerrar-dialogo">Cerrar</button>
+                                        </div>
+                                    </form>
+                                </dialog>
                             </div>
                             <div class="col-md-12" style="border-top: 1px solid #ccc;">
                                 <table class="" style="width:100%;">
@@ -167,7 +204,7 @@
                                 <a href="#" class="btn btn-success border d-flex align-items-center">Nuevo Ejercicio</a><!-- href al codigo para crear-->
                             </div>
                         </div>
-                        <div class="ejercicios d-flex justify-content-center flex-wrap pb-4" style="border-bottom: 1px solid #ccc;">
+                        <div class="ejercicios d-flex justify-content-center flex-wrap py-4" style="border-bottom: 1px solid #ccc; border-top: 1px solid #ccc;" >
                             
                             <div class="card m-2 col-md-2 custom-border-card" style="height: auto;">
                                 <div class="text-center p-1">
@@ -239,7 +276,19 @@
             window.location.href = "coach_rutina.html";
         });
     </script>
+    <script>
+        const abrirDialogo = document.getElementById("abrir-dialogo");
+        const cerrarDialogo = document.getElementById("cerrar-dialogo");
+        const dialogo = document.getElementById("model");
     
+        abrirDialogo.addEventListener("click", () => {
+            dialogo.showModal(); // Abre el diálogo cuando se hace clic en el enlace
+        });
+    
+        cerrarDialogo.addEventListener("click", () => {
+            dialogo.close(); // Cierra el diálogo cuando se hace clic en el botón "Cerrar"
+        });
+    </script>
     <script>
         const btnAbrirModalEjercicio = 
         document.querySelector("#btnModEjercicio");
