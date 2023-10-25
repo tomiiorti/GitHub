@@ -12,12 +12,7 @@ body{
   width: auto;
   height: 88vh;
 }
-header{
-  height: 7vh;
-  width: auto;
-  background: linear-gradient(90deg, rgba(0, 0, 0, 0.2), rgba(0,0,0,0), rgba(0, 0, 0, 0.2));
-  color: white; /* Texto en color blanco */
-}
+
 
 .form {
 

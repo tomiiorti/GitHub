@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -9,18 +10,18 @@
     <title>Proximo Cbum</title>
 </head>
 <body class="body">
-    <header class="header d-flex justify-content-center align-items-center">
-        <div class="text-center col-md-8">
-            <a class="" href=""> Gimnasio</a>
+    <header class="header d-flex justify-content-between align-items-center">
+        <div class="text-center px-4">
+            <a class="fs-3 nav-link" href="#"> Gimnasio</a>
         </div>
         <div class="m-4 d-flex justify-content-end">
-            <a href="cerrar_sesion.py" class="btn btn-secondary">Cerrar Sesión</a>
+            <a href="php/cerrar_sesion.php" class="buttonClose">Cerrar Sesión</a>
         </div>
     </header> 
 <main>
     <section class="container">
         <div class="container mt-5">
-            <h1 class="fs-4">Rutina de Ejercicios</h1>
+            <h1 class="fs-2">Rutina de Ejercicios</h1>
             <h2>Nombre del flaquito</h2>
             <ul class="nav nav-tabs" id="myTab" role="tablist">
                 <li class="nav-item"  role="presentation">
@@ -45,11 +46,11 @@
     
             <!-- Contenido de las pestañas -->
             <div class="tab-content" id="myTabContent">
-                <div class="tab-pane fade show active" id="dia1" role="tabpanel" aria-labelledby="dia1-tab">
+                <div class="tab-pane fade show active m-3" id="dia1" role="tabpanel" aria-labelledby="dia1-tab">
                     <!-- Contenido del Día 1 (ejercicios) aquí -->
                     <h2>Día 1</h2>
                     <div class="d-flex flex-wrap justify-content-center">
-                        <div class="card m-2" style="width:150px; height: auto;">
+                        <div class="card m-2 " style="width: 100px; height: auto;">
                             <div class="text-center p-1">
                                 <p>Levanta mancuernas pa1</p>
                             </div>
@@ -60,97 +61,6 @@
                                 <div class="text-center">
                                     <p class="mb-2">3x12</p>
                                     <p>Descripcion</p> <!-- Se extiende y muestra una breve descripción-->
-                                    <a class="nav-link border rounded-pill m-2" href="#" data-bs-toggle="collapse" data-bs-target="#descripcionAvatar" aria-expanded="false" aria-controls="descripcionAvatar">Ver Video</a> <!--Envia a una pagina con un video-->
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card m-2" style="width:150px; height: auto;">
-                            <div class="text-center p-1">
-                                <p>Levanta mancuernas pa2</p>
-                            </div>
-                            <div>
-                                <div class="img">
-                                    <img src="./img/descarga.jpeg" alt="" class="img-fluid">
-                                </div>
-                                <div class="text-center">
-                                    <p class="mb-2">3x12</p>
-                                    <p>Descripcion</p> <!-- Se extiende y muestra una breve descripción-->
-                                    <a class="nav-link border rounded-pill m-2" href="#" data-bs-toggle="collapse" data-bs-target="#descripcionAvatar" aria-expanded="false" aria-controls="descripcionAvatar">Ver Video</a> <!--Envia a una pagina con un video-->
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card m-2" style="width:150px; height: auto;">
-                            <div class="text-center p-1">
-                                <p>Levanta mancuernas pa3</p>
-                            </div>
-                            <div>
-                                <div class="img">
-                                    <img src="./img/descarga.jpeg" alt="" class="img-fluid">
-                                </div>
-                                <div class="text-center">
-                                    <p class="mb-2">3x12</p>
-                                    <p>Descripcion</p> <!-- Se extiende y muestra una breve descripción-->
-                                    <a class="nav-link border rounded-pill m-2" href="#" data-bs-toggle="collapse" data-bs-target="#descripcionAvatar" aria-expanded="false" aria-controls="descripcionAvatar">Ver Video</a> <!--Envia a una pagina con un video-->
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card m-2" style="width:150px; height: auto;">
-                            <div class="text-center p-1">
-                                <p>Levanta mancuernas pa4</p>
-                            </div>
-                            <div>
-                                <div class="img">
-                                    <img src="./img/descarga.jpeg" alt="" class="img-fluid">
-                                </div>
-                                <div class="text-center">
-                                    <p class="mb-2">3x12</p>
-                                    <p>Descripcion</p> <!-- Se extiende y muestra una breve descripción-->
-                                    <a class="nav-link border rounded-pill m-2" href="#" data-bs-toggle="collapse" data-bs-target="#descripcionAvatar" aria-expanded="false" aria-controls="descripcionAvatar">Ver Video</a> <!--Envia a una pagina con un video-->
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card m-2" style="width:150px; height: auto;">
-                            <div class="text-center p-1">
-                                <p>Levanta mancuernas pa5</p>
-                            </div>
-                            <div>
-                                <div class="img">
-                                    <img src="./img/descarga.jpeg" alt="" class="img-fluid">
-                                </div>
-                                <div class="text-center">
-                                    <p class="mb-2">3x12</p>
-                                    <p>Descripcion</p> <!-- Se extiende y muestra una breve descripción-->
-                                    <a class="nav-link border rounded-pill m-2" href="#" data-bs-toggle="collapse" data-bs-target="#descripcionAvatar" aria-expanded="false" aria-controls="descripcionAvatar">Ver Video</a> <!--Envia a una pagina con un video-->
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card m-2" style="width:150px; height: auto;">
-                            <div class="text-center p-1">
-                                <p>Levanta mancuernas pa6</p>
-                            </div>
-                            <div>
-                                <div class="img">
-                                    <img src="./img/descarga.jpeg" alt="" class="img-fluid">
-                                </div>
-                                <div class="text-center">
-                                    <p class="mb-2">3x12</p>
-                                    <p>Descripcion</p> <!-- Se extiende y muestra una breve descripción-->
-                                    <a class="nav-link border rounded-pill m-2" href="#" data-bs-toggle="collapse" data-bs-target="#descripcionAvatar" aria-expanded="false" aria-controls="descripcionAvatar">Ver Video</a> <!--Envia a una pagina con un video-->
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card m-2" style="width:150px; height: auto;">
-                            <div class="text-center p-1">
-                                <p>Levanta mancuernas pa7</p>
-                            </div>
-                            <div>
-                                <div class="img">
-                                    <img src="./img/descarga.jpeg" alt="" class="img-fluid">
-                                </div>
-                                <div class="text-center">
-                                    <p class="mb-2">3x12</p>
-                                    <p>Descripcion</p> <!-- Se extiende y muestra una breve descripción-->
-                                    <a class="nav-link border rounded-pill m-2" href="#" data-bs-toggle="collapse" data-bs-target="#descripcionAvatar" aria-expanded="false" aria-controls="descripcionAvatar">Ver Video</a> <!--Envia a una pagina con un video-->
                                 </div>
                             </div>
                         </div>
