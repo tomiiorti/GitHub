@@ -26,6 +26,7 @@
     .header{
       height:6vh;
       background-color: rgba(0, 0, 0, 0.575);
+      width: 100%;
     }
     .buttonSave {
       border-radius: 10px;
