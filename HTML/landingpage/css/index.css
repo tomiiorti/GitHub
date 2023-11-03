@@ -1,24 +1,150 @@
 body{
   height: auto;
   padding: 0;
+  width: auto;
+  background-color: black;
 }
-.aaa{
-  background-color: red;
+.main{
+  width: 100%;
 }
-.vent{
-  height: 50vh;
-  background-color: blue;
+.header{
+  background-color: rgb(0, 0, 0);
+  height: 8vh;
 }
-.nos{
-  height: 50vh;
-  background-color: green;
+.cont-img {
+  width: 100%;
+  height: 60rem; /* Esto ajusta la altura para cubrir la pantalla verticalmente */
+  background-image: url(../img/pngtree-an-old-gym-setting-with-dumbbells-picture-image_2667256.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
-p {
-  font-size: 1.8rem;
+
+.box-atr{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  height: 20rem;
+  width: 16rem;
+  border-radius: 0px;
+background: #c2c2c2;
+box-shadow:  -0px -0px 0px #4e4e4e,
+             5px 5px 10px rgb(46, 46, 46);
+}
+.cont-atr {
+  margin-top: -10rem; /* Ajusta la superposición vertical según tu preferencia */
+  width: 100%;
+}
+.cont-form{
+  padding: 2rem;
+  border-radius: 1rem;
+  background-color: rgb(97, 97, 97);
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+}
+.cont-cost {
+  margin-bottom: -6rem; /* Ajusta la superposición vertical según tu preferencia */
+  width: 100%;
+  position: relative; /* Agrega esta propiedad */
+  z-index: 2;
+}
+.box-cost{
+  height: 30rem;
+  width: 25rem;
+  border-radius: 0px;
+  background: #c2c2c2;
+  box-shadow:  -0px -0px 0px #4e4e4e,
+              5px 5px 10px rgb(46, 46, 46);
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+footer a {
+  min-height: 2rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  color: rgb(255, 254, 254);
+  text-decoration: none; /* Elimina la subrayado en los enlaces */
+  transition: color 0.3s; /* Agrega una transición suave al cambiar el color */
+}
+.cont-footer{
+  width: 20rem;
+  margin: 1rem;
+}
+
+/* Cambia el color de los enlaces al pasar el cursor */
+footer .github:hover {
+  color: #176100; /* Cambia este valor al color deseado al pasar el cursor */
+}
+footer .linkedin:hover {
+  color: #719efdbd; /* Cambia este valor al color deseado al pasar el cursor */
+}
+footer .instagram:hover {
+  background-image: linear-gradient(to right, rgb(255, 0, 179),yellow);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+footer .gmail:hover {
+  color: rgba(255, 68, 68, 0.658);
+}
+footer .whatsapp:hover {
+  color: #09ff00a1; /* Cambia este valor al color deseado al pasar el cursor */
+}
+.vertical-line {
+  border-left: 1px solid #000; /* Puedes ajustar el grosor y el color de la línea */
+  height: 80%; /* Puedes ajustar la altura de la línea vertical */
+  margin: 0 10px; /* Puedes ajustar el espacio a izquierda y derecha de la línea */
+}
+.cont-vent{
+  background-color: white;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
 }
 .box-vent{
-  background-color: white;
+  height: 9rem;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+  margin-left: 5rem;
+
+}
+.buttonSave {
+  border-radius: 10px;
+  padding: 6px 10px;
+  background-color: #2980B9;
+  color: white;
+  border: 1px solid white; /* Green */
+  transition-duration: 0.4s;
+}
+.buttonSave:hover { 
+  border: 1px solid #2980B9;
+  background-color: white; /* Green */
+  color: black;
+}
+.buttonClose{
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 6px 10px;
+  background-color: #FF220C;
+  color: white;
+  border: 1px solid white; /* Green */
+  transition-duration: 0.4s;
+}
+.buttonClose:hover {
+  border: 1px solid #FF220C;
+  background-color: white; /* Green */
+  color: black;
+}
+dialog{
+  border-radius: 1rem;
+  background-color: #DFE4F8;
+}
+.selectGym {
+  text-align: center;
+  width: 250px;
+  height: 50px;
+  font-size: 16px;
+  background-color: #f2f2f2;
+  border: 2px solid #333;
+  border-radius: 5px;
 }
