@@ -1,0 +1,193 @@
+body{
+    height: auto;
+    padding: 0;
+    width: auto;
+    --s: 50px;
+    --c: #191b22;
+    --_s: calc(2*var(--s)) calc(2*var(--s));
+    --_g: 35.36% 35.36% at;
+    --_c: #0000 66%,#20222a 68% 70%,#0000 72%;
+    background: 
+      radial-gradient(var(--_g) 100% 25%,var(--_c)) var(--s) var(--s)/var(--_s), 
+      radial-gradient(var(--_g) 0 75%,var(--_c)) var(--s) var(--s)/var(--_s), 
+      radial-gradient(var(--_g) 100% 25%,var(--_c)) 0 0/var(--_s), 
+      radial-gradient(var(--_g) 0 75%,var(--_c)) 0 0/var(--_s), 
+      repeating-conic-gradient(var(--c) 0 25%,#0000 0 50%) 0 0/var(--_s), 
+      radial-gradient(var(--_c)) 0 calc(var(--s)/2)/var(--s) var(--s) var(--c);
+    background-attachment: fixed;
+    font-family: 'Poppins';
+  }
+  .main{
+    width: 100%;
+  }
+  .header{
+    background-color: var(--c);
+    height: 8vh;
+  }
+  .cont-img {
+    width: 100%;
+    height: 60rem; /* Esto ajusta la altura para cubrir la pantalla verticalmente */
+    background-image: url(../img/pngtree-an-old-gym-setting-with-dumbbells-picture-image_2667256.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  
+  .box-atr{
+    margin: 2rem;
+    height: 20rem;
+    width: 16rem;
+    border-radius: 0px;
+  box-shadow:  -0px -0px 0px #4e4e4e,
+               5px 5px 10px rgb(46, 46, 46);
+  }
+  #box-atr1{
+    background: #0D1B2A;
+  }
+  #box-atr2{
+    background: #1B263B;
+  }
+  #box-atr3{
+    background: #415A77;
+  }
+  #box-atr4{
+    background: #778DA9;
+  }
+  #box-atr5{
+    background: #E0E1DD;
+  }
+
+  .cont-atr {
+    margin-top: -10rem; /* Ajusta la superposición vertical según tu preferencia */
+    width: 100%;
+  }
+  .cont-form{
+    padding: 2rem;
+    border-radius: 1rem;
+    background-image: linear-gradient(to bottom, #E0E1DD, #778DA9);
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+  }
+  .cont-cost {
+    margin-bottom: -6rem; /* Ajusta la superposición vertical según tu preferencia */
+    width: 100%;
+    position: relative; /* Agrega esta propiedad */
+    z-index: 2;
+  }
+  .box-cost{
+    margin-right: 3rem;
+    margin-left: 3rem;
+    margin-top: 2rem;
+    height: 30rem;
+    width: 25rem;
+    border-radius: 0px;
+    background: #c2c2c2;
+    box-shadow:  -0px -0px 0px #4e4e4e,
+                5px 5px 10px rgb(46, 46, 46);
+  }
+  footer a {
+    min-height: 2rem;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.6rem;
+    color: rgb(255, 254, 254);
+    text-decoration: none; /* Elimina la subrayado en los enlaces */
+    transition: color 0.3s; /* Agrega una transición suave al cambiar el color */
+  }
+  .cont-footer{
+    width: 20rem;
+    margin-top: 1rem;
+  }
+  
+  /* Cambia el color de los enlaces al pasar el cursor */
+  footer .github:hover {
+    color: #176100; /* Cambia este valor al color deseado al pasar el cursor */
+  }
+  footer .linkedin:hover {
+    color: #719efdbd; /* Cambia este valor al color deseado al pasar el cursor */
+  }
+  footer .instagram:hover {
+    background-image: linear-gradient(to right, rgb(255, 0, 179),yellow);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  footer .gmail:hover {
+    color: rgba(255, 68, 68, 0.658);
+  }
+  footer .whatsapp:hover {
+    color: #09ff00a1; /* Cambia este valor al color deseado al pasar el cursor */
+  }
+  .vertical-line {
+    border-left: 1px solid #000; /* Puedes ajustar el grosor y el color de la línea */
+    height: 80%; /* Puedes ajustar la altura de la línea vertical */
+    margin: 0 10px; /* Puedes ajustar el espacio a izquierda y derecha de la línea */
+  }
+  .cont-vent{
+    background-color: white;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+  }
+  .box-vent{
+    height: 9rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: 5rem;
+  
+  }
+  .buttonSave {
+    border-radius: 10px;
+    padding: 6px 10px;
+    background-color: #2980B9;
+    color: white;
+    border: 1px solid white; /* Green */
+    transition-duration: 0.4s;
+  }
+  .buttonSave:hover { 
+    border: 1px solid #2980B9;
+    background-color: white; /* Green */
+    color: black;
+  }
+  .buttonClose{
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 6px 10px;
+    background-color: #FF220C;
+    color: white;
+    border: 1px solid white; /* Green */
+    transition-duration: 0.4s;
+  }
+  .buttonClose:hover {
+    border: 1px solid #FF220C;
+    background-color: white; /* Green */
+    color: black;
+  }
+  dialog{
+    border-radius: 1rem;
+    background-color: #DFE4F8;
+  }
+  .selectGym {
+    text-align: center;
+    width: 250px;
+    height: 50px;
+    font-size: 16px;
+    background-color: #f2f2f2;
+    border: 2px solid #333;
+    border-radius: 5px;
+  }
+#formGym::backdrop{
+    background-color: rgba(0, 0, 0, 0.822);
+}
+#btnGetInto{
+  border-radius: 10px;
+  padding: 6px 10px;
+  color: white;
+  border: none;
+  background-color: #1B263B;
+  transition: 0.4s;
+}
+#btnGetInto:hover { 
+  background-color: #E0E1DD; /* Green */
+  color: #1B263B;
+}
