@@ -1,0 +1,124 @@
+@font-face {
+  font-family: 'Poppins';
+  src: url('../font/Poppins/Poppins-Light.ttf') format('ttf');
+  /* Agrega otros formatos aquí, si es necesario */
+}
+
+.body{
+  --s: 50px;
+  --c: #191b22;
+  --_s: calc(2*var(--s)) calc(2*var(--s));
+  --_g: 35.36% 35.36% at;
+  --_c: #0000 66%,#20222a 68% 70%,#0000 72%;
+  background: 
+    radial-gradient(var(--_g) 100% 25%,var(--_c)) var(--s) var(--s)/var(--_s), 
+    radial-gradient(var(--_g) 0 75%,var(--_c)) var(--s) var(--s)/var(--_s), 
+    radial-gradient(var(--_g) 100% 25%,var(--_c)) 0 0/var(--_s), 
+    radial-gradient(var(--_g) 0 75%,var(--_c)) 0 0/var(--_s), 
+    repeating-conic-gradient(var(--c) 0 25%,#0000 0 50%) 0 0/var(--_s), 
+    radial-gradient(var(--_c)) 0 calc(var(--s)/2)/var(--s) var(--s) var(--c);
+  height: auto;
+  width: auto;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  display:flex;
+  flex-direction: column;
+  font-family: 'Poppins';
+}
+
+.cabeza{
+  height:6vh;
+  background-color: rgba(0, 0, 0, 0.575);
+}
+.main{
+  height: 87vh;
+}
+
+footer a {
+  min-height: 2rem;
+  font-family: "Poppins", sans-serif;
+  color: rgb(255, 254, 254);
+  text-decoration: none; /* Elimina la subrayado en los enlaces */
+  transition: color 0.3s; /* Agrega una transición suave al cambiar el color */
+}
+
+/* Cambia el color de los enlaces al pasar el cursor */
+footer .github:hover {
+  color: #176100; /* Cambia este valor al color deseado al pasar el cursor */
+}
+footer .linkedin:hover {
+  color: #719efdbd; /* Cambia este valor al color deseado al pasar el cursor */
+}
+footer .instagram:hover {
+  background-image: linear-gradient(to right, rgb(255, 0, 179),yellow);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+footer .gmail:hover {
+  color: rgba(255, 68, 68, 0.658);
+}
+footer .whatsapp:hover {
+  color: #09ff00a1; /* Cambia este valor al color deseado al pasar el cursor */
+}
+footer{
+  height: 9vh;
+  justify-content: center;
+  background-color: #080b185e;
+
+}
+.form {
+
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  padding: 30px;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.form input {
+  font-family: "Poppins", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  border-radius: 7px;
+  margin: 0 0 1px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+  
+}
+.form span{
+  margin: 0 0 1px
+}
+.form button {
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #234666;
+  width: 100%;
+  border: 0; 
+  padding: 15px;
+  color: #FFFFFF;
+  border-radius: 7px;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+
+.form .register-form {
+  display: none;
+}
+.form{
+  background-color: #7F86A09c;
+  border: 2px solid white;
+}
+.cabeza a{
+  text-decoration: none;
+}
+.col a{
+  font-size: 1.6rem;
+}
